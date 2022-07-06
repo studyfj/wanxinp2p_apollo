@@ -1,0 +1,6 @@
+# Project exclude paths
+/wanxinp2p-api/target/
+/wanxinp2p-common/target/
+/wanxinp2p-consumer-service/target/
+/wanxinp2p-discover-server/target/
+/wanxinp2p-gateway-server/target/
