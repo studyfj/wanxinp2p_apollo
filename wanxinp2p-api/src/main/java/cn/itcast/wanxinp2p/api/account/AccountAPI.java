@@ -1,5 +1,7 @@
 package cn.itcast.wanxinp2p.api.account;
 
+import cn.itcast.wanxinp2p.api.account.model.AccountDTO;
+import cn.itcast.wanxinp2p.api.account.model.AccountRegisterDTO;
 import cn.itcast.wanxinp2p.common.domain.RestResponse;
 
 /**
@@ -7,7 +9,7 @@ import cn.itcast.wanxinp2p.common.domain.RestResponse;
  * @version 1.0
  * @Email fengjun3@asiainfo.com
  * @date 2022/7/6 9:16
- * @Description 致敬大师，致敬未来的自己
+ * @Description 账户中心API
  */
 public interface AccountAPI {
 
@@ -17,5 +19,22 @@ public interface AccountAPI {
      * @return
      */
     RestResponse getSMSCode(String mobile);
+
+    /**
+     * 校验手机号和验证码
+     * @param mobile 手机号
+     * @param key 校验标识
+     * @param code 验证码
+     * @return
+     */
+    RestResponse<Integer> checkMobile(String mobile, String key, String code);
+
+
+    /**
+     * 注册用户，保存信息
+     * @param accountRegisterDTO 注册对象
+     * @return AccountDTO 返回对象
+     */
+    RestResponse<AccountDTO> register(AccountRegisterDTO accountRegisterDTO);
 
 }

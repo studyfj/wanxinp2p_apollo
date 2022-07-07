@@ -1,6 +1,10 @@
 package cn.itcast.wanxinp2p.account.service;
 
+import cn.itcast.wanxinp2p.account.entity.Account;
+import cn.itcast.wanxinp2p.api.account.model.AccountDTO;
+import cn.itcast.wanxinp2p.api.account.model.AccountRegisterDTO;
 import cn.itcast.wanxinp2p.common.domain.RestResponse;
+import com.baomidou.mybatisplus.extension.service.IService;
 
 /**
  * @author fengjun
@@ -9,7 +13,7 @@ import cn.itcast.wanxinp2p.common.domain.RestResponse;
  * @date 2022/7/6 9:26
  * @Description 致敬大师，致敬未来的自己
  */
-public interface AccountService {
+public interface AccountService extends IService<Account> {
 
     /**
      * 获取手机短信验证码
@@ -17,4 +21,15 @@ public interface AccountService {
      * @return RestResponse 响应对象
      */
     RestResponse getSMSCode(String mobile);
+
+    /**
+     * 校验手机号和验证码
+     * @param mobile
+     * @param key
+     * @param code
+     * @return
+     */
+    Integer checkMobile(String mobile, String key, String code);
+
+    AccountDTO register(AccountRegisterDTO accountRegisterDTO);
 }

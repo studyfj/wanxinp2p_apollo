@@ -1,5 +1,8 @@
 package cn.itcast.wanxinp2p.account.service;
 
+import cn.itcast.wanxinp2p.account.common.AccountErrorCode;
+import cn.itcast.wanxinp2p.common.domain.BusinessException;
+import cn.itcast.wanxinp2p.common.domain.CommonErrorCode;
 import cn.itcast.wanxinp2p.common.domain.RestResponse;
 import cn.itcast.wanxinp2p.common.util.OkHttpUtil;
 import org.springframework.beans.factory.annotation.Value;
@@ -21,6 +24,12 @@ public class SmsService {
     @Value("${sms.enable}")
     private Boolean smsEnable;
 
+    /**
+     * 发送并获取短信验证码
+     *
+     * @param mobile
+     * @return
+     */
     public RestResponse getSmsCode(String mobile) {
         // 如果开启发送短信
         if (smsEnable) {
@@ -29,4 +38,26 @@ public class SmsService {
         // 不开启直接返回
         return RestResponse.success();
     }
+
+    /**
+     * 校验验证码
+     *
+     * @param code 验证码
+     * @param key  redis中的key标识
+     */
+    public void verifySmsCode(String key, String code) {
+        // 开启短信验证码进行校验
+        if (smsEnable) {
+            StringBuilder sb = new StringBuilder("/verify?name=sms");
+            sb.append("&verificationKey=").append(key);
+            sb.append("&verificationCode=").append(code);
+            RestResponse restResponse = OkHttpUtil.post(smsURL + sb, "");
+            // 0 或者 false 是失败情况
+            if (restResponse.getCode() != CommonErrorCode.SUCCESS.getCode() || restResponse.getResult().toString().equalsIgnoreCase("false")) {
+                throw new BusinessException(AccountErrorCode.E_140152);
+            }
+
+        }
+    }
+
 }
