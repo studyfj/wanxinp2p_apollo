@@ -15,7 +15,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @EnableDiscoveryClient
 @EnableFeignClients(basePackages = {"cn.itcast.wanxinp2p.consumer.agent"})
 @EnableSwagger2
-@MapperScan(basePackages = "cn.itcastwanxinp2p.consumer.mapper")
+@MapperScan(basePackages = "cn.itcast.wanxinp2p.consumer.mapper")
 public class ConsumerService {
 
     public static void main(String[] args) {

@@ -3,13 +3,13 @@ package cn.itcast.wanxinp2p.account.controller;
 import cn.itcast.wanxinp2p.account.service.AccountService;
 import cn.itcast.wanxinp2p.api.account.AccountAPI;
 import cn.itcast.wanxinp2p.api.account.model.AccountDTO;
+import cn.itcast.wanxinp2p.api.account.model.AccountLoginDTO;
 import cn.itcast.wanxinp2p.api.account.model.AccountRegisterDTO;
 import cn.itcast.wanxinp2p.common.domain.RestResponse;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +20,6 @@ import org.springframework.web.bind.annotation.*;
  * @date 2022/7/6 8:42
  * @Description 致敬大师，致敬未来的自己
  */
-@Slf4j
 @RestController
 @Api(value = "统一账户服务", tags = "account")
 public class AccountController implements AccountAPI {
@@ -49,7 +48,14 @@ public class AccountController implements AccountAPI {
     @PostMapping(value = "/l/accounts")
     @Override
     public RestResponse<AccountDTO> register(@RequestBody AccountRegisterDTO accountRegisterDTO) {
+        return accountService.register(accountRegisterDTO);
+    }
 
-        return RestResponse.success(accountService.register(accountRegisterDTO));
+    @ApiOperation("用户登录")
+    @ApiImplicitParam(name = "accountLoginDTO", value = "登录信息", required = true, dataType = "AccountLoginDTO", paramType = "body")
+    @PostMapping(value = "/l/accounts/session")
+    @Override
+    public RestResponse<AccountDTO> login(@RequestBody AccountLoginDTO accountLoginDTO) {
+        return RestResponse.success(accountService.login(accountLoginDTO));
     }
 }

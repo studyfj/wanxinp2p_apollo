@@ -39,6 +39,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="MyTest" options="" />
       <module name="wanxindepository" options="-parameters" />
+      <module name="wanxinp2p" options="-parameters" />
       <module name="wanxinp2p-account-service" options="-parameters" />
       <module name="wanxinp2p-api" options="-parameters" />
       <module name="wanxinp2p-common" options="-parameters" />

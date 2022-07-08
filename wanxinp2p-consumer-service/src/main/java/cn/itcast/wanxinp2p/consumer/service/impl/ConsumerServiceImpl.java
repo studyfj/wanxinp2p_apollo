@@ -1,10 +1,15 @@
 package cn.itcast.wanxinp2p.consumer.service.impl;
 
+import cn.itcast.wanxinp2p.api.account.model.AccountDTO;
+import cn.itcast.wanxinp2p.api.account.model.AccountRegisterDTO;
 import cn.itcast.wanxinp2p.api.consumer.model.ConsumerDTO;
 import cn.itcast.wanxinp2p.api.consumer.model.ConsumerRegisterDTO;
 import cn.itcast.wanxinp2p.common.domain.BusinessException;
 import cn.itcast.wanxinp2p.common.domain.CodePrefixCode;
+import cn.itcast.wanxinp2p.common.domain.CommonErrorCode;
+import cn.itcast.wanxinp2p.common.domain.RestResponse;
 import cn.itcast.wanxinp2p.common.util.CodeNoUtil;
+import cn.itcast.wanxinp2p.consumer.agent.AccountApiAgent;
 import cn.itcast.wanxinp2p.consumer.common.ConsumerErrorCode;
 import cn.itcast.wanxinp2p.consumer.entity.Consumer;
 import cn.itcast.wanxinp2p.consumer.mapper.ConsumerMapper;
@@ -12,6 +17,7 @@ import cn.itcast.wanxinp2p.consumer.service.ConsumerService;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.BeanUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
@@ -23,6 +29,12 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class ConsumerServiceImpl extends ServiceImpl<ConsumerMapper, Consumer> implements ConsumerService {
+
+    /**
+     * 远程调用类
+     */
+    @Autowired
+    private AccountApiAgent accountApiAgent;
 
     @Override
     public Integer checkMobile(String mobile) {
@@ -68,5 +80,14 @@ public class ConsumerServiceImpl extends ServiceImpl<ConsumerMapper, Consumer> i
         consumer.setUsername(CodeNoUtil.getNo(CodePrefixCode.CODE_NO_PREFIX));
         consumer.setIsBindCard(0);
         this.baseMapper.insert(consumer);
+
+        // 进行远程调用统一账户中心
+        AccountRegisterDTO accountRegisterDTO = new AccountRegisterDTO();
+        BeanUtils.copyProperties(consumerRegisterDTO, accountRegisterDTO);
+        accountRegisterDTO.setUsername(consumer.getUsername());
+        RestResponse<AccountDTO> accountDTO = accountApiAgent.register(accountRegisterDTO);
+        if (accountDTO.getCode() != CommonErrorCode.SUCCESS.getCode()) {
+            throw new BusinessException(ConsumerErrorCode.E_140106);
+        }
     }
 }

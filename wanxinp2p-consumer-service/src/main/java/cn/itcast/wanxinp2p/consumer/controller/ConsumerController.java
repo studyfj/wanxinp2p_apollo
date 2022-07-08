@@ -9,6 +9,7 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -25,7 +26,7 @@ public class ConsumerController implements ConsumerAPI {
     @ApiImplicitParam(name = "consumerRegisterDTO", value = "注册信息", required = true, dataType = "AccountRegisterDTO", paramType = "body")
     @PostMapping(value = "/consumers")
     @Override
-    public RestResponse register(ConsumerRegisterDTO consumerRegisterDTO) {
+    public RestResponse register(@RequestBody ConsumerRegisterDTO consumerRegisterDTO) {
         consumerService.register(consumerRegisterDTO);
         return RestResponse.success();
     }
