@@ -11,7 +11,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 /**
  * @Author FengJun
  */
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"org.dromara.hmily", "cn.itcast.wanxinp2p.consumer"})
 @EnableDiscoveryClient
 @EnableFeignClients(basePackages = {"cn.itcast.wanxinp2p.consumer.agent"})
 @EnableSwagger2

@@ -12,7 +12,10 @@ import cn.itcast.wanxinp2p.common.domain.BusinessException;
 import cn.itcast.wanxinp2p.common.domain.RestResponse;
 import cn.itcast.wanxinp2p.common.util.PasswordUtil;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import lombok.extern.slf4j.Slf4j;
+import org.dromara.hmily.annotation.Hmily;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -26,6 +29,7 @@ import org.springframework.stereotype.Service;
  * @Description 致敬大师，致敬未来的自己
  */
 @Service
+@Slf4j
 public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> implements AccountService {
 
     @Autowired
@@ -52,10 +56,8 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
     }
 
     @Override
+    @Hmily(confirmMethod = "confirmRegister", cancelMethod = "cancelRegister")
     public RestResponse<AccountDTO> register(AccountRegisterDTO accountRegisterDTO) {
-        AccountDTO accountDTO = new AccountDTO();
-        accountDTO.setUsername(accountRegisterDTO.getUsername());
-        accountDTO.setMobile(accountRegisterDTO.getMobile());
         Account account = new Account();
         account.setUsername(accountRegisterDTO.getUsername());
         account.setMobile(accountRegisterDTO.getMobile());
@@ -68,8 +70,19 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
         return RestResponse.success(convertAccountEntityToDTO(account));
     }
 
+    public void confirmRegister(AccountRegisterDTO registerDTO) {
+        log.info("execute confirmRegister");
+    }
+
+    public void cancelRegister(AccountRegisterDTO registerDTO) {
+        log.info("execute cancelRegister");
+        //删除账号
+        remove(Wrappers.<Account>lambdaQuery().eq(Account::getUsername, registerDTO.getUsername()));
+    }
+
     /**
      * entity转为dto
+     *
      * @param entity
      * @return
      */
@@ -91,7 +104,7 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
         // b端用户通过username去登录，c端用户通过mobile去登录
         if ("b".equalsIgnoreCase(domain)) {
             account = getAccountByUserName(accountLoginDTO.getUsername());
-        }else {
+        } else {
             account = getAccountByMobile(accountLoginDTO.getMobile());
         }
 
@@ -117,6 +130,7 @@ public class AccountServiceImpl extends ServiceImpl<AccountMapper, Account> impl
         Account account = this.baseMapper.selectOne(wrapper);
         return account;
     }
+
     private Account getAccountByUserName(String userName) {
         QueryWrapper<Account> wrapper = new QueryWrapper<>();
         wrapper.eq("username", userName);
