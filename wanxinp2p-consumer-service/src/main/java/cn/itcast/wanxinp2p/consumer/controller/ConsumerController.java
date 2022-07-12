@@ -2,8 +2,11 @@ package cn.itcast.wanxinp2p.consumer.controller;
 
 import cn.itcast.wanxinp2p.api.consumer.ConsumerAPI;
 import cn.itcast.wanxinp2p.api.consumer.model.ConsumerRegisterDTO;
+import cn.itcast.wanxinp2p.api.consumer.model.ConsumerRequest;
+import cn.itcast.wanxinp2p.api.depository.model.GatewayRequest;
 import cn.itcast.wanxinp2p.common.domain.RestResponse;
 import cn.itcast.wanxinp2p.common.util.EncryptUtil;
+import cn.itcast.wanxinp2p.consumer.common.util.SecurityUtil;
 import cn.itcast.wanxinp2p.consumer.service.ConsumerService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
@@ -40,4 +43,14 @@ public class ConsumerController implements ConsumerAPI {
         return RestResponse.success(EncryptUtil.decodeUTF8StringBase64(jsonToken));
     }
 
+    @ApiOperation("生成开户请求数据")
+    @ApiImplicitParam(name = "consumerRequest", value = "开户信息", required = true, dataType = "ConsumerRequest", paramType = "body")
+    @PostMapping("/my/consumers")
+    @Override
+    public RestResponse<GatewayRequest> createConsumer(@RequestBody ConsumerRequest consumerRequest) {
+        // 通过springSecurity获取
+        String mobile = SecurityUtil.getUser().getMobile();
+        consumerRequest.setMobile(mobile);
+        return consumerService.createConsumer(consumerRequest);
+    }
 }

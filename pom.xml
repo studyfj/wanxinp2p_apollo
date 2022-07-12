@@ -15,6 +15,7 @@
         <module>wanxinp2p-consumer-service</module>
         <module>wanxinp2p-discover-server</module>
         <module>wanxinp2p-uaa-service</module>
+        <module>wanxinp2p-depository-agent-service</module>
     </modules>
 
     <parent>
