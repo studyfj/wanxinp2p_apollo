@@ -1,0 +1,1138 @@
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:38,201 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:38,610 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:38,722 INFO [main][GenericScope.java:294] - BeanFactory id=33c68227-122c-36dd-8028-a36de4f592a4
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:38,769 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2385cf88] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:38,972 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 53000 (http)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:38,972 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-53000"]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:38,988 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:38,988 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:38,988 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\dev_tools\java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\dev_tools\MySQL\MySQL Server8.0\bin;D:\dev_tools\maven\apache-maven-3.6.3\bin;D:\dev_tools\java\jdk1.8.0_131\bin;D:\dev_tools\java\jre1.8.0_131\bin;C:\Program Files\Common Files\Oracle\Java\javapath;D:\dev_tools\maven\nexus\nexus-3.20.1-01\bin;D:\dev_tools\VMware Workstation\bin\;D:\dev_tools\oracle\app\product\11.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\dev_tools\git\cmd;D:\dev_tools\TortoiseSVN\bin;D:\tools\nvm;C:\Program Files\nodejs;D:\dev_tools\tomcat\apache-tomcat-8.5.73\bin;D:\dev_tools\tomcat\apache-tomcat-8.5.73\bin;D:\dev_tools\gradle\gradle-7.4\bin;D:\dev_tools\Xftp_7.0\xftp\;D:\download\googleDownload\apache压力测试\apache-jmeter-5.4.3\apache-jmeter-5.4.3\lib\ext\ApacheJMeter_core.jar;D:\download\googleDownload\apache压力测试\apache-jmeter-5.4.3\apache-jmeter-5.4.3\lib\jorphan.jar;D:\download\googleDownload\apache压力测试\apache-jmeter-5.4.3\apache-jmeter-5.4.3\lib\logkit-2.0.jar;D:\dev_tools\tomcat\apache-tomcat-8.5.73\lib;C:\Users\admin\AppData\Local\Yarn\bin;;.]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:39,051 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:39,051 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 834 ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:39,117 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:39,117 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:39,117 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5399f6c5
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:40,653 INFO [main][InetUtils.java:170] - Cannot determine local hostname
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:40,779 INFO [main][WebApplicationImpl.java:815] - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:40,810 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:40,810 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:40,873 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:40,873 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:41,062 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:41,062 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:41,157 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:42,700 INFO [main][InetUtils.java:170] - Cannot determine local hostname
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:42,732 INFO [main][InstanceInfoFactory.java:71] - Setting initial instance status as: STARTING
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:42,747 INFO [main][DiscoveryClient.java:349] - Initializing Eureka in region us-east-1
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:42,747 INFO [main][DiscoveryClient.java:352] - Client configured to neither register nor query for data.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:42,747 INFO [main][DiscoveryClient.java:365] - Discovery Client initialized at timestamp 1657369242747 with initial instances count: 0
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:42,763 INFO [main][DefaultEurekaServerContext.java:63] - Initializing ...
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:42,763 INFO [main][PeerEurekaNodes.java:188] - Adding new peer nodes [http://localhost:53000/eureka/]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,029 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,029 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,029 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,029 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,092 INFO [main][PeerEurekaNodes.java:110] - Replica node URL:  http://localhost:53000/eureka/
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,092 INFO [main][AbstractInstanceRegistry.java:151] - Finished initializing remote region registries. All known remote regions: []
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,092 INFO [main][DefaultEurekaServerContext.java:70] - Initialized
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,092 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,154 INFO [main][EurekaServiceRegistry.java:42] - Registering application HNRADIO-DISCOVERY with eureka with status UP
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,154 INFO [Thread-28][EurekaServerBootstrap.java:109] - Setting the eureka configuration..
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,154 INFO [Thread-28][EurekaServerBootstrap.java:114] - Eureka data center value eureka.datacenter is not set, defaulting to default
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,154 INFO [Thread-28][EurekaServerBootstrap.java:128] - Eureka environment value eureka.environment is not set, defaulting to test
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,154 INFO [Thread-28][EurekaServerBootstrap.java:184] - isAws returned false
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,154 INFO [Thread-28][EurekaServerBootstrap.java:152] - Initialized server context
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,154 INFO [Thread-28][PeerAwareInstanceRegistryImpl.java:241] - Got 1 instances from neighboring DS node
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,154 INFO [Thread-28][PeerAwareInstanceRegistryImpl.java:242] - Renew threshold is: 1
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,154 INFO [Thread-28][PeerAwareInstanceRegistryImpl.java:253] - Changing status to UP
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,154 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-53000"]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,170 INFO [Thread-28][EurekaServerInitializerConfiguration.java:72] - Started Eureka Server
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,170 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 53000 (http) with context path ''
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,170 INFO [main][EurekaAutoServiceRegistration.java:141] - Updating port to 53000
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,186 INFO [main][StartupInfoLogger.java:59] - Started DiscoveryServer in 8.654 seconds (JVM running for 9.598)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,848 INFO [RMI TCP Connection(5)-192.168.0.106][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,848 INFO [RMI TCP Connection(5)-192.168.0.106][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:43,863 INFO [RMI TCP Connection(5)-192.168.0.106][FrameworkServlet.java:546] - Completed initialization in 0 ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:20:53,159 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:03,161 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 2ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:04,913 INFO [main][DefaultApplicationProvider.java:85] - App ID is set to gateway-server by app.id property from System Property
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:04,913 INFO [main][DefaultServerProvider.java:108] - Environment is set to [dev] by JVM system property 'env'.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:04,929 WARN [main][DefaultMetaServerProvider.java:39] - Could not find meta server address, because it is not available in neither (1) JVM system property 'apollo.meta', (2) OS env variable 'APOLLO_META' (3) property 'apollo.meta' from server.properties nor (4) property 'apollo.meta' from app.properties
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:04,929 INFO [main][MetaDomainConsts.java:93] - Located meta server address http://localhost:8080 for env DEV from com.ctrip.framework.apollo.core.internals.LegacyMetaServerProvider
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:13,164 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 2ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:23,176 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 12ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:23,430 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:23,978 INFO [main][RepositoryConfigurationDelegate.java:244] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:23,978 INFO [main][RepositoryConfigurationDelegate.java:126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:23,994 INFO [main][RepositoryConfigurationDelegate.java:182] - Finished Spring Data repository scanning in 0ms. Found 0 repository interfaces.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:24,152 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:24,168 WARN [main][EndpointId.java:135] - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:24,246 INFO [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:24,340 INFO [main][GenericScope.java:294] - BeanFactory id=c909118e-f5ea-36ae-a580-3fa5668bf914
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:24,357 WARN [main][PropertySourcesDeducer.java:75] - Multiple PropertySourcesPlaceholderConfigurer beans registered [propertySourcesPlaceholderConfigurer, org.springframework.context.support.PropertySourcesPlaceholderConfigurer], falling back to Environment
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:24,487 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$eb0c1cb1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:25,038 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 53010 (http)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:25,038 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-53010"]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:25,054 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:25,054 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:25,054 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\dev_tools\java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\dev_tools\MySQL\MySQL Server8.0\bin;D:\dev_tools\maven\apache-maven-3.6.3\bin;D:\dev_tools\java\jdk1.8.0_131\bin;D:\dev_tools\java\jre1.8.0_131\bin;C:\Program Files\Common Files\Oracle\Java\javapath;D:\dev_tools\maven\nexus\nexus-3.20.1-01\bin;D:\dev_tools\VMware Workstation\bin\;D:\dev_tools\oracle\app\product\11.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\dev_tools\git\cmd;D:\dev_tools\TortoiseSVN\bin;D:\tools\nvm;C:\Program Files\nodejs;D:\dev_tools\tomcat\apache-tomcat-8.5.73\bin;D:\dev_tools\tomcat\apache-tomcat-8.5.73\bin;D:\dev_tools\gradle\gradle-7.4\bin;D:\dev_tools\Xftp_7.0\xftp\;D:\download\googleDownload\apache压力测试\apache-jmeter-5.4.3\apache-jmeter-5.4.3\lib\ext\ApacheJMeter_core.jar;D:\download\googleDownload\apache压力测试\apache-jmeter-5.4.3\apache-jmeter-5.4.3\lib\jorphan.jar;D:\download\googleDownload\apache压力测试\apache-jmeter-5.4.3\apache-jmeter-5.4.3\lib\logkit-2.0.jar;D:\dev_tools\tomcat\apache-tomcat-8.5.73\lib;C:\Users\admin\AppData\Local\Yarn\bin;;.]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:25,194 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:25,194 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 1749 ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:25,289 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:25,289 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:25,305 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3fb450d7
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:27,084 INFO [main][InetUtils.java:170] - Cannot determine local hostname
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:28,483 INFO [main][InetUtils.java:170] - Cannot determine local hostname
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:28,891 WARN [main][JwtAccessTokenConverter.java:302] - Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:28,954 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:28,954 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:29,079 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:29,346 INFO [main][UserDetailsServiceAutoConfiguration.java:86] - 
+
+Using generated security password: 5fbe3b1b-1cee-43da-a8ac-60d11d62053a
+
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:29,409 INFO [main][DefaultSecurityFilterChain.java:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4ab9d160, org.springframework.security.web.context.SecurityContextPersistenceFilter@492c9892, org.springframework.security.web.header.HeaderWriterFilter@2c1a8529, org.springframework.security.web.authentication.logout.LogoutFilter@4dac40b, org.springframework.security.oauth2.provider.authentication.OAuth2AuthenticationProcessingFilter@39f4a7c4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@436a563f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@51508029, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5599dc60, org.springframework.security.web.session.SessionManagementFilter@6d9428f3, org.springframework.security.web.access.ExceptionTranslationFilter@73be4cdd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6cc56b32]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:29,503 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:29,877 INFO [main][ZuulFilterInitializer.java:65] - Starting filter initializer
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,044 INFO [main][InstanceInfoFactory.java:71] - Setting initial instance status as: STARTING
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,076 INFO [main][DiscoveryClient.java:349] - Initializing Eureka in region us-east-1
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,107 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,107 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,170 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,170 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,295 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,452 INFO [main][DiscoveryClient.java:958] - Disable delta property : false
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,452 INFO [main][DiscoveryClient.java:959] - Single vip registry refresh property : null
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,452 INFO [main][DiscoveryClient.java:960] - Force full registry fetch : false
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,452 INFO [main][DiscoveryClient.java:961] - Application is null : false
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,452 INFO [main][DiscoveryClient.java:962] - Registered Applications size is zero : true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,452 INFO [main][DiscoveryClient.java:964] - Application version is -1: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,452 INFO [main][DiscoveryClient.java:1047] - Getting all instance registry info from the eureka server
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,594 INFO [main][DiscoveryClient.java:1056] - The response status is 200
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,594 INFO [main][DiscoveryClient.java:1270] - Starting heartbeat executor: renew interval is: 30
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,594 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,594 INFO [main][DiscoveryClient.java:449] - Discovery Client initialized at timestamp 1657369290594 with initial instances count: 0
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,594 INFO [main][EurekaServiceRegistry.java:42] - Registering application GATEWAY-SERVER with eureka with status UP
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,594 INFO [main][DiscoveryClient.java:1305] - Saw local status change event StatusChangeEvent [timestamp=1657369290594, current=UP, previous=STARTING]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,610 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_GATEWAY-SERVER/gateway-server:192.168.246.1:53010: registering service...
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,610 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-53010"]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,641 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 53010 (http) with context path ''
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,641 INFO [main][EurekaAutoServiceRegistration.java:141] - Updating port to 53010
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,641 INFO [main][StartupInfoLogger.java:59] - Started GatewayServer in 29.063 seconds (JVM running for 30.225)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,674 INFO [http-nio-53000-exec-2][AbstractInstanceRegistry.java:266] - Registered instance GATEWAY-SERVER/gateway-server:192.168.246.1:53010 with status UP (replication=false)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:30,674 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:835] - DiscoveryClient_GATEWAY-SERVER/gateway-server:192.168.246.1:53010 - registration status: 204
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:31,036 INFO [RMI TCP Connection(15)-192.168.0.106][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:31,036 INFO [RMI TCP Connection(15)-192.168.0.106][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:31,036 INFO [RMI TCP Connection(15)-192.168.0.106][FrameworkServlet.java:546] - Completed initialization in 0 ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:31,114 INFO [RMI TCP Connection(16)-192.168.0.106][EpollProvider.java:68] - Starting without optional epoll library
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:31,130 INFO [RMI TCP Connection(16)-192.168.0.106][KqueueProvider.java:70] - Starting without optional kqueue library
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:31,224 INFO [http-nio-53000-exec-3][AbstractInstanceRegistry.java:266] - Registered instance GATEWAY-SERVER/gateway-server:192.168.246.1:53010 with status UP (replication=true)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:33,181 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 4ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:43,196 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 14ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:21:53,204 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 7ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:00,610 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:958] - Disable delta property : false
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:00,610 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:959] - Single vip registry refresh property : null
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:00,610 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:960] - Force full registry fetch : false
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:00,610 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:961] - Application is null : false
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:00,610 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:962] - Registered Applications size is zero : true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:00,610 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:964] - Application version is -1: false
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:00,610 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:1047] - Getting all instance registry info from the eureka server
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:00,641 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:1056] - The response status is 200
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:03,217 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 13ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:13,226 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 9ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:23,232 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 5ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:33,248 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 15ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:36,384 INFO [main][DefaultApplicationProvider.java:85] - App ID is set to uaa-service by app.id property from System Property
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:36,391 INFO [main][DefaultServerProvider.java:108] - Environment is set to [dev] by JVM system property 'env'.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:36,434 WARN [main][DefaultMetaServerProvider.java:39] - Could not find meta server address, because it is not available in neither (1) JVM system property 'apollo.meta', (2) OS env variable 'APOLLO_META' (3) property 'apollo.meta' from server.properties nor (4) property 'apollo.meta' from app.properties
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:36,442 INFO [main][MetaDomainConsts.java:93] - Located meta server address http://localhost:8080 for env DEV from com.ctrip.framework.apollo.core.internals.LegacyMetaServerProvider
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:40,828 INFO [main][DefaultApplicationProvider.java:85] - App ID is set to account-service by app.id property from System Property
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:40,828 INFO [main][DefaultServerProvider.java:108] - Environment is set to [dev] by JVM system property 'env'.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:40,859 WARN [main][DefaultMetaServerProvider.java:39] - Could not find meta server address, because it is not available in neither (1) JVM system property 'apollo.meta', (2) OS env variable 'APOLLO_META' (3) property 'apollo.meta' from server.properties nor (4) property 'apollo.meta' from app.properties
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:40,859 INFO [main][MetaDomainConsts.java:93] - Located meta server address http://localhost:8080 for env DEV from com.ctrip.framework.apollo.core.internals.LegacyMetaServerProvider
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:43,250 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 3ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:53,265 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 14ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:55,201 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: application
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:56,211 WARN [main][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: application, url: http://192.168.246.1:8080/configs/uaa-service/DEFAULT/application?ip=192.168.246.1 [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: application, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:56,211 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: application
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:57,225 WARN [main][LocalFileConfigRepository.java:167] - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: application, url: http://192.168.246.1:8080/configs/uaa-service/DEFAULT/application?ip=192.168.246.1 [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: application, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:57,225 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: application
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:58,242 WARN [main][LocalFileConfigRepository.java:167] - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: application, url: http://192.168.246.1:8080/configs/uaa-service/DEFAULT/application?ip=192.168.246.1 [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: application, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:58,242 WARN [main][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.LocalFileConfigRepository, reason: Load config from local config failed! [Cause: Cannot read from local cache file C:\opt\data\uaa-service\config-cache\uaa-service+DEFAULT+application.properties]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:58,244 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: application
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:59,257 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: application
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:22:59,540 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:00,251 INFO [main][RepositoryConfigurationDelegate.java:244] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:00,251 INFO [main][RepositoryConfigurationDelegate.java:126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:00,266 WARN [main][LocalFileConfigRepository.java:167] - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: application, url: http://192.168.246.1:8080/configs/uaa-service/DEFAULT/application?ip=192.168.246.1&messages=%7B%22details%22%3A%7B%22uaa-service%2Bdefault%2Bapplication%22%3A308%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: application, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:00,266 WARN [main][DefaultConfig.java:61] - Init Apollo Local Config failed - namespace: application, reason: Load config from local config failed! [Cause: Cannot read from local cache file C:\opt\data\uaa-service\config-cache\uaa-service+DEFAULT+application.properties].
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:00,266 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: application
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:00,282 INFO [main][RepositoryConfigurationDelegate.java:182] - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:00,298 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:00,345 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:00,408 INFO [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:00,520 INFO [main][GenericScope.java:294] - BeanFactory id=1aeae7b3-5e30-3999-a1cb-060d103c4219
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:00,535 WARN [main][PropertySourcesDeducer.java:75] - Multiple PropertySourcesPlaceholderConfigurer beans registered [propertySourcesPlaceholderConfigurer, org.springframework.context.support.PropertySourcesPlaceholderConfigurer], falling back to Environment
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:00,566 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:00,566 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration$$EnhancerBySpringCGLIB$$d227b112] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:00,582 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:01,264 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'defaultMQProducer' of type [org.apache.rocketmq.client.producer.DefaultMQProducer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:01,264 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$52521a7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:01,264 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$b771e3c0] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:01,280 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$7288c9af] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:01,280 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: application, url: http://192.168.246.1:8080/configs/uaa-service/DEFAULT/application?ip=192.168.246.1&messages=%7B%22details%22%3A%7B%22uaa-service%2Bdefault%2Bapplication%22%3A308%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: application, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:01,280 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:01,280 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:01,280 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$995440dd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:01,296 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:01,296 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$e730bf36] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:01,312 WARN [main][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.246.1:8080/configs/uaa-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.246.1 [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:01,312 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:01,328 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:01,328 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:01,328 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:01,328 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:01,338 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:01,968 INFO [http-nio-53000-exec-6][AbstractInstanceRegistry.java:266] - Registered instance CONSUMER-SERVICE/consumer-service:192.168.246.1:53050 with status UP (replication=false)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:02,321 WARN [main][LocalFileConfigRepository.java:167] - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.246.1:8080/configs/uaa-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.246.1 [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:02,321 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:02,489 INFO [http-nio-53000-exec-7][AbstractInstanceRegistry.java:266] - Registered instance CONSUMER-SERVICE/consumer-service:192.168.246.1:53050 with status UP (replication=true)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:02,876 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rocketMQTemplate' of type [org.apache.rocketmq.spring.core.RocketMQTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:02,876 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transactionHandlerRegistry' of type [org.apache.rocketmq.spring.config.TransactionHandlerRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:02,923 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a991a216] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:02,939 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:02,956 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:02,956 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$c5aba513] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:03,219 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 53030 (http)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:03,239 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-53030"]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:03,239 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:03,239 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:03,239 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\dev_tools\java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\dev_tools\MySQL\MySQL Server8.0\bin;D:\dev_tools\maven\apache-maven-3.6.3\bin;D:\dev_tools\java\jdk1.8.0_131\bin;D:\dev_tools\java\jre1.8.0_131\bin;C:\Program Files\Common Files\Oracle\Java\javapath;D:\dev_tools\maven\nexus\nexus-3.20.1-01\bin;D:\dev_tools\VMware Workstation\bin\;D:\dev_tools\oracle\app\product\11.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\dev_tools\git\cmd;D:\dev_tools\TortoiseSVN\bin;D:\tools\nvm;C:\Program Files\nodejs;D:\dev_tools\tomcat\apache-tomcat-8.5.73\bin;D:\dev_tools\tomcat\apache-tomcat-8.5.73\bin;D:\dev_tools\gradle\gradle-7.4\bin;D:\dev_tools\Xftp_7.0\xftp\;D:\download\googleDownload\apache压力测试\apache-jmeter-5.4.3\apache-jmeter-5.4.3\lib\ext\ApacheJMeter_core.jar;D:\download\googleDownload\apache压力测试\apache-jmeter-5.4.3\apache-jmeter-5.4.3\lib\jorphan.jar;D:\download\googleDownload\apache压力测试\apache-jmeter-5.4.3\apache-jmeter-5.4.3\lib\logkit-2.0.jar;D:\dev_tools\tomcat\apache-tomcat-8.5.73\lib;C:\Users\admin\AppData\Local\Yarn\bin;;.]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:03,270 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 4ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:03,339 WARN [main][LocalFileConfigRepository.java:167] - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.246.1:8080/configs/uaa-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.246.1 [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:03,339 WARN [main][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.LocalFileConfigRepository, reason: Load config from local config failed! [Cause: Cannot read from local cache file C:\opt\data\uaa-service\config-cache\uaa-service+DEFAULT+micro_service.spring-cloud-feign.properties]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:03,339 WARN [main][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:03,339 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:03,339 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 3784 ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:03,439 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:03,439 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:03,439 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@6e2eead5
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:03,522 INFO [main][DruidDataSourceAutoConfigure.java:56] - Init DruidDataSource
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:03,725 INFO [main][DruidDataSource.java:1002] - {dataSource-1} inited
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:04,344 WARN [main][LocalFileConfigRepository.java:167] - Sync config from upstream repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository failed, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.246.1:8080/configs/uaa-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.246.1 [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:04,344 WARN [main][DefaultConfig.java:61] - Init Apollo Local Config failed - namespace: micro_service.spring-cloud-feign, reason: Load config from local config failed! [Cause: Cannot read from local cache file C:\opt\data\uaa-service\config-cache\uaa-service+DEFAULT+micro_service.spring-cloud-feign.properties].
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:04,344 WARN [main][DefaultConfig.java:95] - Could not load config for namespace application from Apollo, please check whether the configs are released in Apollo! Return default value now!
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:04,344 WARN [main][DefaultConfig.java:95] - Could not load config for namespace micro_service.spring-cloud-feign from Apollo, please check whether the configs are released in Apollo! Return default value now!
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:04,344 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:04,996 INFO [main][RepositoryConfigurationDelegate.java:244] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:04,996 INFO [main][RepositoryConfigurationDelegate.java:126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,043 INFO [main][RepositoryConfigurationDelegate.java:182] - Finished Spring Data repository scanning in 32ms. Found 0 repository interfaces.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,058 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,058 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,122 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,155 INFO [main][InetUtils.java:170] - Cannot determine local hostname
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,173 INFO [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,286 INFO [main][GenericScope.java:294] - BeanFactory id=2c4ef2eb-29cb-3881-82d6-305f8cfa2a97
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,304 WARN [main][PropertySourcesDeducer.java:75] - Multiple PropertySourcesPlaceholderConfigurer beans registered [propertySourcesPlaceholderConfigurer, org.springframework.context.support.PropertySourcesPlaceholderConfigurer], falling back to Environment
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,327 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'cn.itcast.wanxinp2p.uaa.agent.AccountApiAgent' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,343 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,425 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$96fd6ef9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,441 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,456 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,456 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$b31771f6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,722 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 53020 (http)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,739 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-53020"]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,752 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,752 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,755 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\dev_tools\java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\dev_tools\MySQL\MySQL Server8.0\bin;D:\dev_tools\maven\apache-maven-3.6.3\bin;D:\dev_tools\java\jdk1.8.0_131\bin;D:\dev_tools\java\jre1.8.0_131\bin;C:\Program Files\Common Files\Oracle\Java\javapath;D:\dev_tools\maven\nexus\nexus-3.20.1-01\bin;D:\dev_tools\VMware Workstation\bin\;D:\dev_tools\oracle\app\product\11.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\dev_tools\git\cmd;D:\dev_tools\TortoiseSVN\bin;D:\tools\nvm;C:\Program Files\nodejs;D:\dev_tools\tomcat\apache-tomcat-8.5.73\bin;D:\dev_tools\tomcat\apache-tomcat-8.5.73\bin;D:\dev_tools\gradle\gradle-7.4\bin;D:\dev_tools\Xftp_7.0\xftp\;D:\download\googleDownload\apache压力测试\apache-jmeter-5.4.3\apache-jmeter-5.4.3\lib\ext\ApacheJMeter_core.jar;D:\download\googleDownload\apache压力测试\apache-jmeter-5.4.3\apache-jmeter-5.4.3\lib\jorphan.jar;D:\download\googleDownload\apache压力测试\apache-jmeter-5.4.3\apache-jmeter-5.4.3\lib\logkit-2.0.jar;D:\dev_tools\tomcat\apache-tomcat-8.5.73\lib;C:\Users\admin\AppData\Local\Yarn\bin;;.]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,915 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:05,915 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 1555 ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:06,021 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:06,021 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:06,021 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@700b9e6b
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:06,120 INFO [main][DruidDataSourceAutoConfigure.java:56] - Init DruidDataSource
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:06,221 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:06,290 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:06,290 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:06,290 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:06,388 INFO [main][DruidDataSource.java:1002] - {dataSource-1} inited
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:06,555 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:07,928 INFO [main][InetUtils.java:170] - Cannot determine local hostname
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:08,300 INFO [main][InetUtils.java:170] - Cannot determine local hostname
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:08,448 WARN [main][JwtAccessTokenConverter.java:302] - Unable to create an RSA verifier from verifierKey (ignoreable if using MAC)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:08,512 INFO [main][InstanceInfoFactory.java:71] - Setting initial instance status as: STARTING
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:08,544 INFO [main][DiscoveryClient.java:349] - Initializing Eureka in region us-east-1
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:08,817 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:08,817 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:08,969 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:08,969 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,013 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,067 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,068 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,272 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,573 INFO [main][DiscoveryClient.java:958] - Disable delta property : false
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,573 INFO [main][DiscoveryClient.java:959] - Single vip registry refresh property : null
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,573 INFO [main][DiscoveryClient.java:960] - Force full registry fetch : false
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,573 INFO [main][DiscoveryClient.java:961] - Application is null : false
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,573 INFO [main][DiscoveryClient.java:962] - Registered Applications size is zero : true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,574 INFO [main][DiscoveryClient.java:964] - Application version is -1: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,574 INFO [main][DiscoveryClient.java:1047] - Getting all instance registry info from the eureka server
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,735 INFO [main][DiscoveryClient.java:1056] - The response status is 200
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,738 INFO [main][DiscoveryClient.java:1270] - Starting heartbeat executor: renew interval is: 30
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,742 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,744 INFO [main][DefaultSecurityFilterChain.java:43] - Creating filter chain: Ant [pattern='/public/**'], []
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,744 INFO [main][DefaultSecurityFilterChain.java:43] - Creating filter chain: Ant [pattern='/webjars/**'], []
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,744 INFO [main][DefaultSecurityFilterChain.java:43] - Creating filter chain: Ant [pattern='/v2/**'], []
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,744 INFO [main][DefaultSecurityFilterChain.java:43] - Creating filter chain: Ant [pattern='/swagger**'], []
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,744 INFO [main][DefaultSecurityFilterChain.java:43] - Creating filter chain: Ant [pattern='/static/**'], []
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,745 INFO [main][DefaultSecurityFilterChain.java:43] - Creating filter chain: Ant [pattern='/resources/**'], []
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,745 INFO [main][DiscoveryClient.java:449] - Discovery Client initialized at timestamp 1657369389744 with initial instances count: 1
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,747 INFO [main][EurekaServiceRegistry.java:42] - Registering application ACCOUNT-SERVICE with eureka with status UP
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,748 INFO [main][DiscoveryClient.java:1305] - Saw local status change event StatusChangeEvent [timestamp=1657369389748, current=UP, previous=STARTING]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,750 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_ACCOUNT-SERVICE/account-service:192.168.246.1:53030: registering service...
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,750 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,762 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,786 INFO [http-nio-53000-exec-8][AbstractInstanceRegistry.java:266] - Registered instance ACCOUNT-SERVICE/account-service:192.168.246.1:53030 with status UP (replication=false)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,788 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:835] - DiscoveryClient_ACCOUNT-SERVICE/account-service:192.168.246.1:53030 - registration status: 204
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,796 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,803 INFO [main][DefaultSecurityFilterChain.java:43] - Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/oauth/token'], Ant [pattern='/oauth/token_key'], Ant [pattern='/oauth/check_token']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@69d58731, org.springframework.security.web.context.SecurityContextPersistenceFilter@18d22ecf, org.springframework.security.web.header.HeaderWriterFilter@5814b4fb, org.springframework.security.web.authentication.logout.LogoutFilter@2d4a0671, org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter@3684d2c0, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@11170228, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@31443680, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5b5b8730, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3275a47f, org.springframework.security.web.session.SessionManagementFilter@4ba13fed, org.springframework.security.web.access.ExceptionTranslationFilter@5724c7da, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@59a2bed1]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,813 INFO [main][DefaultSecurityFilterChain.java:43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@775edae0, org.springframework.security.web.context.SecurityContextPersistenceFilter@3e8afc2d, org.springframework.security.web.header.HeaderWriterFilter@4a5b38e6, org.springframework.security.web.authentication.logout.LogoutFilter@8ce3f27, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@12723c5d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2d172c7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@115ef673, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@26f480c6, org.springframework.security.web.session.SessionManagementFilter@58583a2d, org.springframework.security.web.access.ExceptionTranslationFilter@32d1d6c5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6b4fd7d]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,936 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: handleUsingGET_1
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,937 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: handleUsingGET_2
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,939 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: handleUsingGET_3
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,964 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-53030"]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,983 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 53030 (http) with context path '/account'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,984 INFO [main][EurekaAutoServiceRegistration.java:141] - Updating port to 53030
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:09,986 INFO [main][StartupInfoLogger.java:59] - Started AccountService in 32.602 seconds (JVM running for 33.959)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:10,023 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:10,308 INFO [http-nio-53000-exec-9][AbstractInstanceRegistry.java:266] - Registered instance ACCOUNT-SERVICE/account-service:192.168.246.1:53030 with status UP (replication=true)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:10,704 INFO [RMI TCP Connection(13)-192.168.0.106][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:10,704 INFO [RMI TCP Connection(13)-192.168.0.106][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:10,716 INFO [RMI TCP Connection(13)-192.168.0.106][FrameworkServlet.java:546] - Completed initialization in 11 ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:11,543 INFO [main][InetUtils.java:170] - Cannot determine local hostname
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:11,697 INFO [main][InstanceInfoFactory.java:71] - Setting initial instance status as: STARTING
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:11,726 INFO [main][DiscoveryClient.java:349] - Initializing Eureka in region us-east-1
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,042 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,042 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,139 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,140 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,313 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,516 INFO [main][DiscoveryClient.java:958] - Disable delta property : false
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,517 INFO [main][DiscoveryClient.java:959] - Single vip registry refresh property : null
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,517 INFO [main][DiscoveryClient.java:960] - Force full registry fetch : false
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,517 INFO [main][DiscoveryClient.java:961] - Application is null : false
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,517 INFO [main][DiscoveryClient.java:962] - Registered Applications size is zero : true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,517 INFO [main][DiscoveryClient.java:964] - Application version is -1: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,518 INFO [main][DiscoveryClient.java:1047] - Getting all instance registry info from the eureka server
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,655 INFO [main][DiscoveryClient.java:1056] - The response status is 200
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,657 INFO [main][DiscoveryClient.java:1270] - Starting heartbeat executor: renew interval is: 30
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,659 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,662 INFO [main][DiscoveryClient.java:449] - Discovery Client initialized at timestamp 1657369392661 with initial instances count: 1
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,664 INFO [main][EurekaServiceRegistry.java:42] - Registering application UAA-SERVICE with eureka with status UP
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,664 INFO [main][DiscoveryClient.java:1305] - Saw local status change event StatusChangeEvent [timestamp=1657369392664, current=UP, previous=STARTING]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,666 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_UAA-SERVICE/uaa-service:192.168.246.1:53020: registering service...
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,685 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-53020"]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,706 INFO [http-nio-53000-exec-1][AbstractInstanceRegistry.java:266] - Registered instance UAA-SERVICE/uaa-service:192.168.246.1:53020 with status UP (replication=false)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,708 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:835] - DiscoveryClient_UAA-SERVICE/uaa-service:192.168.246.1:53020 - registration status: 204
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,710 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 53020 (http) with context path '/uaa'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,711 INFO [main][EurekaAutoServiceRegistration.java:141] - Updating port to 53020
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:12,713 INFO [main][StartupInfoLogger.java:59] - Started UAAServer in 39.928 seconds (JVM running for 41.262)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:13,229 INFO [http-nio-53000-exec-2][AbstractInstanceRegistry.java:266] - Registered instance UAA-SERVICE/uaa-service:192.168.246.1:53020 with status UP (replication=true)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:13,273 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 2ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:13,643 INFO [RMI TCP Connection(20)-192.168.0.106][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:13,644 INFO [RMI TCP Connection(20)-192.168.0.106][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:13,656 INFO [RMI TCP Connection(20)-192.168.0.106][FrameworkServlet.java:546] - Completed initialization in 12 ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:13,845 INFO [RMI TCP Connection(21)-192.168.0.106][EpollProvider.java:68] - Starting without optional epoll library
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:13,848 INFO [RMI TCP Connection(21)-192.168.0.106][KqueueProvider.java:70] - Starting without optional kqueue library
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:23,277 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 3ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:33,287 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 9ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:34,172 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:34,949 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:43,291 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 4ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:53,304 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 13ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:58,459 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:23:59,475 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:24:00,486 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.246.1:8080/configs/uaa-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.246.1&messages=%7B%22details%22%3A%7B%22uaa-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A313%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:24:03,308 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 3ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:24:04,164 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:24:04,943 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:24:13,311 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 3ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:24:23,324 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 13ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:24:33,324 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:24:34,166 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:24:34,942 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:24:43,335 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 9ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:24:53,339 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 4ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:25:03,352 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 13ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:25:04,166 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:25:04,913 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:25:13,352 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:25:23,359 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 7ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:25:33,367 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 7ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:25:34,157 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:25:34,939 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:25:43,377 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 9ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:25:53,386 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 9ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:03,391 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 5ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:04,132 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:04,944 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:13,395 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 3ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:23,409 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 14ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:30,482 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:33,415 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 5ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:34,159 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:34,934 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:43,421 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 5ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:53,423 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 2ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:54,640 INFO [http-nio-53010-exec-1][ChainedDynamicProperty.java:115] - Flipping property: uaa-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:54,653 INFO [http-nio-53010-exec-1][ShutdownEnabledTimer.java:58] - Shutdown hook installed for: NFLoadBalancer-PingTimer-uaa-service
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:54,654 INFO [http-nio-53010-exec-1][BaseLoadBalancer.java:197] - Client: uaa-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=uaa-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:54,658 INFO [http-nio-53010-exec-1][DynamicServerListLoadBalancer.java:222] - Using serverListUpdater PollingServerListUpdater
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:54,671 INFO [http-nio-53010-exec-1][ChainedDynamicProperty.java:115] - Flipping property: uaa-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:54,673 INFO [http-nio-53010-exec-1][DynamicServerListLoadBalancer.java:150] - DynamicServerListLoadBalancer for client uaa-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=uaa-service,current list of Servers=[192.168.246.1:53020],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.246.1:53020;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@37941fbd
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:54,980 WARN [http-nio-53020-exec-2][DefaultConfig.java:95] - Could not load config for namespace application from Apollo, please check whether the configs are released in Apollo! Return default value now!
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:54,980 WARN [http-nio-53020-exec-2][DefaultConfig.java:95] - Could not load config for namespace micro_service.spring-cloud-feign from Apollo, please check whether the configs are released in Apollo! Return default value now!
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:55,163 INFO [http-nio-53020-exec-2][ChainedDynamicProperty.java:115] - Flipping property: account-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:55,177 INFO [http-nio-53020-exec-2][ShutdownEnabledTimer.java:58] - Shutdown hook installed for: NFLoadBalancer-PingTimer-account-service
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:55,177 INFO [http-nio-53020-exec-2][BaseLoadBalancer.java:197] - Client: account-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=account-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:55,181 INFO [http-nio-53020-exec-2][DynamicServerListLoadBalancer.java:222] - Using serverListUpdater PollingServerListUpdater
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:55,193 INFO [http-nio-53020-exec-2][ChainedDynamicProperty.java:115] - Flipping property: account-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:55,196 INFO [http-nio-53020-exec-2][DynamicServerListLoadBalancer.java:150] - DynamicServerListLoadBalancer for client account-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=account-service,current list of Servers=[192.168.246.1:53030],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.246.1:53030;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@357d8c59
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:55,675 INFO [PollingServerListUpdater-0][ChainedDynamicProperty.java:115] - Flipping property: uaa-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:26:56,185 INFO [PollingServerListUpdater-0][ChainedDynamicProperty.java:115] - Flipping property: account-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:27:03,425 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 2ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:27:04,146 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:27:04,938 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:27:13,434 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 8ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:27:23,445 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 12ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:27:33,447 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:27:34,162 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:27:34,940 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:27:43,461 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 13ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:27:53,472 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 11ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:27:56,236 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: application
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:27:57,248 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: application, url: http://192.168.246.1:8080/configs/uaa-service/DEFAULT/application?ip=192.168.246.1&messages=%7B%22details%22%3A%7B%22uaa-service%2Bdefault%2Bapplication%22%3A308%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: application, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:01,339 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:02,349 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.246.1:8080/configs/uaa-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.246.1&messages=%7B%22details%22%3A%7B%22uaa-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A313%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:03,478 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 5ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:04,165 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:04,929 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:09,584 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:10,734 INFO [http-nio-53010-exec-4][ChainedDynamicProperty.java:115] - Flipping property: consumer-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:10,739 INFO [http-nio-53010-exec-4][ShutdownEnabledTimer.java:58] - Shutdown hook installed for: NFLoadBalancer-PingTimer-consumer-service
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:10,741 INFO [http-nio-53010-exec-4][BaseLoadBalancer.java:197] - Client: consumer-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=consumer-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:10,745 INFO [http-nio-53010-exec-4][DynamicServerListLoadBalancer.java:222] - Using serverListUpdater PollingServerListUpdater
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:10,747 INFO [http-nio-53010-exec-4][ChainedDynamicProperty.java:115] - Flipping property: consumer-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:10,748 INFO [http-nio-53010-exec-4][DynamicServerListLoadBalancer.java:150] - DynamicServerListLoadBalancer for client consumer-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=consumer-service,current list of Servers=[192.168.246.1:53050],Load balancer stats=Zone stats: {defaultzone=[Zone:defaultzone;	Instance count:1;	Active connections count: 0;	Circuit breaker tripped count: 0;	Active connections per server: 0.0;]
+},Server stats: [[Server:192.168.246.1:53050;	Zone:defaultZone;	Total Requests:0;	Successive connection failure:0;	Total blackout seconds:0;	Last connection made:Thu Jan 01 08:00:00 CST 1970;	First connection made: Thu Jan 01 08:00:00 CST 1970;	Active Connections:0;	total failure count in last (1000) msecs:0;	average resp time:0.0;	90 percentile resp time:0.0;	95 percentile resp time:0.0;	min resp time:0.0;	max resp time:0.0;	stddev resp time:0.0]
+]}ServerList:org.springframework.cloud.netflix.ribbon.eureka.DomainExtractingServerList@5e538451
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:11,755 INFO [PollingServerListUpdater-0][ChainedDynamicProperty.java:115] - Flipping property: consumer-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:12,531 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:13,489 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 11ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:23,495 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 5ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:33,498 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 2ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:34,140 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:34,933 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:43,503 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 5ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:28:53,513 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 10ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:29:03,518 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 4ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:29:04,171 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:29:04,952 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:29:13,518 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:29:23,528 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 9ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:29:33,531 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 3ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:29:34,158 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:29:34,950 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:29:43,535 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 3ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:29:53,538 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 3ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:30:03,545 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 6ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:30:04,147 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:30:04,918 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:30:13,551 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 5ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:30:23,561 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 10ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:30:33,569 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 8ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:30:34,149 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:30:34,928 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:30:43,578 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 8ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:30:53,584 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 6ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:31:03,584 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:31:04,153 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:31:04,952 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:31:13,594 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 9ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:31:23,601 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 7ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:31:30,487 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:31:33,612 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 10ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:31:34,135 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:31:34,930 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:31:43,617 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 4ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:31:53,621 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 4ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:32:03,630 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 8ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:32:04,148 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:32:04,934 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:32:13,634 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 4ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:32:23,642 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 7ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:32:33,652 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 10ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:32:34,160 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:32:34,916 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:32:43,663 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 11ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:32:53,664 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:32:56,237 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: application
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:32:57,245 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: application, url: http://192.168.246.1:8080/configs/uaa-service/DEFAULT/application?ip=192.168.246.1&messages=%7B%22details%22%3A%7B%22uaa-service%2Bdefault%2Bapplication%22%3A308%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: application, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:33:01,332 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:33:02,348 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.246.1:8080/configs/uaa-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.246.1&messages=%7B%22details%22%3A%7B%22uaa-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A313%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:33:03,665 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:33:04,136 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:33:04,921 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:33:09,599 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:33:12,541 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:33:13,680 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 14ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:33:23,682 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:33:33,683 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:33:34,144 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:33:34,922 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:33:43,694 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 10ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:33:53,707 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 13ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:34:03,709 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 2ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:34:04,136 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:34:04,927 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:34:13,716 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 6ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:34:23,727 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 11ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:34:33,739 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 11ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:34:34,135 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:34:34,929 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:34:43,742 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 2ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:34:53,750 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 8ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:35:03,750 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:35:04,147 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:35:04,934 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:35:13,756 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 5ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:35:23,760 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 4ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:35:33,775 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 14ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:35:34,156 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:35:34,916 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:35:43,100 INFO [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater][PeerAwareInstanceRegistryImpl.java:539] - Current renewal threshold is : 0
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:35:43,787 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 11ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:35:53,791 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 3ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:36:03,804 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 13ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:36:04,120 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:36:04,920 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:36:13,811 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 6ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:36:23,821 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 10ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:36:30,497 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:36:33,831 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 9ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:36:34,149 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:36:34,903 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:36:43,843 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 11ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:36:53,854 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 11ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:37:03,863 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 9ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:37:04,152 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:37:04,926 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:37:13,866 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 2ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:37:23,871 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 5ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:37:33,875 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 2ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:37:34,128 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:37:34,934 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:37:43,889 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 15ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:37:53,896 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 6ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:37:56,225 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: application
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:37:57,234 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: application, url: http://192.168.246.1:8080/configs/uaa-service/DEFAULT/application?ip=192.168.246.1&messages=%7B%22details%22%3A%7B%22uaa-service%2Bdefault%2Bapplication%22%3A308%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: application, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:38:01,333 WARN [Apollo-RemoteConfigRepository-1][RemoteConfigRepository.java:194] - Load config failed, will retry in 1 SECONDS. appId: uaa-service, cluster: DEFAULT, namespaces: micro_service.spring-cloud-feign
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:38:02,355 WARN [Apollo-RemoteConfigRepository-1][AbstractConfigRepository.java:26] - Sync config failed, will retry. Repository class com.ctrip.framework.apollo.internals.RemoteConfigRepository, reason: Load Apollo Config failed - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, url: http://192.168.246.1:8080/configs/uaa-service/DEFAULT/micro_service.spring-cloud-feign?ip=192.168.246.1&messages=%7B%22details%22%3A%7B%22uaa-service%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A313%2C%22common-template%2Bdefault%2Bmicro_service.spring-cloud-feign%22%3A403%7D%7D [Cause: [status code: 404] Could not find config for namespace - appId: uaa-service, cluster: DEFAULT, namespace: micro_service.spring-cloud-feign, please check whether the configs are released in Apollo!]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:38:03,901 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 4ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:38:04,166 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:38:04,935 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:38:09,611 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:38:12,548 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:38:13,902 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 0ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:38:23,907 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 5ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:38:33,916 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 9ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:38:34,166 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:38:34,931 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:38:43,925 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 9ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:38:53,927 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:39:03,928 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:39:04,150 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:39:04,901 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:39:13,930 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:39:23,940 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 10ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:39:33,954 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 14ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:39:34,148 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:39:34,924 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:39:43,967 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 12ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:39:53,968 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 1ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:03,979 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 11ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:04,152 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:04,907 INFO [NettyClientSelector_1][Slf4jLoggerFactory.java:95] - closeChannel: close the connection to remote address[] result: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:13,983 INFO [Eureka-EvictionTimer][AbstractInstanceRegistry.java:1250] - Running the evict task with compensationTime 3ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,537 INFO [Thread-30][EurekaServiceRegistry.java:65] - Unregistering application HNRADIO-DISCOVERY with eureka with status DOWN
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,540 INFO [Thread-30][DefaultEurekaServerContext.java:76] - Shutting down ...
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,541 INFO [Thread-30][DefaultEurekaServerContext.java:79] - Shut down
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,543 INFO [Thread-30][ExecutorConfigurationSupport.java:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,547 INFO [Thread-30][DiscoveryClient.java:888] - Shutting down DiscoveryClient ...
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,547 INFO [Thread-30][DiscoveryClient.java:911] - Completed shut down of DiscoveryClient
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,562 INFO [Thread-77][PollingServerListUpdater.java:53] - Shutting down the Executor Pool for PollingServerListUpdater
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,563 INFO [Thread-61][EurekaServiceRegistry.java:65] - Unregistering application GATEWAY-SERVER with eureka with status DOWN
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,563 WARN [Thread-61][DiscoveryClient.java:1303] - Saw local status change event StatusChangeEvent [timestamp=1657370417563, current=DOWN, previous=UP]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,563 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_GATEWAY-SERVER/gateway-server:192.168.246.1:53010: registering service...
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,565 INFO [Thread-61][ZuulFilterInitializer.java:77] - Stopping filter initializer
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,567 INFO [Thread-61][ShutdownEnabledTimer.java:67] - Shutdown hook removed for: NFLoadBalancer-PingTimer-uaa-service
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,567 INFO [Thread-61][ShutdownEnabledTimer.java:72] - Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.lang.Runtime.removeShutdownHook(Runtime.java:239)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:337)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:271)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1055)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1062)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:79)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1055)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1062)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,573 ERROR [DiscoveryClient-InstanceInfoReplicator-0][RedirectingEurekaHttpClient.java:91] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: org.apache.http.NoHttpResponseException: localhost:53000 failed to respond
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.http.NoHttpResponseException: localhost:53000 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 29 more
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,575 WARN [DiscoveryClient-InstanceInfoReplicator-0][RetryableEurekaHttpClient.java:130] - Request execution failed with message: org.apache.http.NoHttpResponseException: localhost:53000 failed to respond
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,575 INFO [Thread-61][ShutdownEnabledTimer.java:67] - Shutdown hook removed for: NFLoadBalancer-PingTimer-consumer-service
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,575 INFO [Thread-61][ShutdownEnabledTimer.java:72] - Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.lang.Runtime.removeShutdownHook(Runtime.java:239)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:337)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:271)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1055)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1062)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:79)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1055)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1062)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,578 INFO [DiscoveryClient-InstanceInfoReplicator-0][DefaultRequestDirector.java:690] - I/O exception (java.net.SocketException) caught when processing request to {}->http://localhost:53000: Software caused connection abort: socket write error
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,578 INFO [DiscoveryClient-InstanceInfoReplicator-0][DefaultRequestDirector.java:700] - Retrying request to {}->http://localhost:53000
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,578 INFO [Thread-61][ExecutorConfigurationSupport.java:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,579 ERROR [DiscoveryClient-InstanceInfoReplicator-0][RedirectingEurekaHttpClient.java:83] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: org.apache.http.client.ClientProtocolException
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.http.client.ClientProtocolException
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:839)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 30 more
+Caused by: org.apache.http.client.NonRepeatableRequestException: Cannot retry request with a non-repeatable request entity.  The cause lists the reason the original request failed.
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:653)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	... 33 more
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flushBuffer(AbstractSessionOutputBuffer.java:160)
+	at org.apache.http.impl.io.AbstractSessionOutputBuffer.flush(AbstractSessionOutputBuffer.java:168)
+	at org.apache.http.impl.io.ChunkedOutputStream.flush(ChunkedOutputStream.java:192)
+	at com.fasterxml.jackson.core.json.UTF8JsonGenerator.flush(UTF8JsonGenerator.java:1100)
+	at com.fasterxml.jackson.databind.ObjectMapper.writeValue(ObjectMapper.java:2657)
+	at com.fasterxml.jackson.core.base.GeneratorBase.writeObject(GeneratorBase.java:381)
+	at com.fasterxml.jackson.core.JsonGenerator.writeObjectField(JsonGenerator.java:1726)
+	at com.netflix.discovery.converters.EurekaJacksonCodec$InstanceInfoSerializer.serialize(EurekaJacksonCodec.java:371)
+	at com.netflix.discovery.converters.EurekaJacksonCodec$InstanceInfoSerializer.serialize(EurekaJacksonCodec.java:327)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider._serialize(DefaultSerializerProvider.java:468)
+	at com.fasterxml.jackson.databind.ser.DefaultSerializerProvider.serializeValue(DefaultSerializerProvider.java:397)
+	at com.fasterxml.jackson.databind.ObjectWriter$Prefetch.serialize(ObjectWriter.java:1392)
+	at com.fasterxml.jackson.databind.ObjectWriter._configAndWriteValue(ObjectWriter.java:1120)
+	at com.fasterxml.jackson.databind.ObjectWriter.writeValue(ObjectWriter.java:950)
+	at com.netflix.discovery.converters.EurekaJacksonCodec.writeTo(EurekaJacksonCodec.java:221)
+	at com.netflix.discovery.converters.wrappers.CodecWrappers$LegacyJacksonJson.encode(CodecWrappers.java:304)
+	at com.netflix.discovery.provider.DiscoveryJerseyProvider.writeTo(DiscoveryJerseyProvider.java:135)
+	at com.sun.jersey.api.client.RequestWriter$RequestEntityWriterImpl.writeRequestEntity(RequestWriter.java:231)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler$2.writeTo(ApacheHttpClient4Handler.java:289)
+	at org.apache.http.entity.HttpEntityWrapper.writeTo(HttpEntityWrapper.java:96)
+	at org.apache.http.impl.client.EntityEnclosingRequestWrapper$EntityWrapper.writeTo(EntityEnclosingRequestWrapper.java:110)
+	at org.apache.http.impl.entity.EntitySerializer.serialize(EntitySerializer.java:118)
+	at org.apache.http.impl.AbstractHttpClientConnection.sendRequestEntity(AbstractHttpClientConnection.java:274)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.sendRequestEntity(AbstractClientConnAdapter.java:239)
+	at org.apache.http.protocol.HttpRequestExecutor.doSendRequest(HttpRequestExecutor.java:238)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:123)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679)
+	... 35 more
+	Suppressed: java.net.SocketException: Software caused connection abort: socket write error
+		at java.net.SocketOutputStream.socketWrite0(Native Method)
+		at java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+		at java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+		at org.apache.http.impl.io.AbstractSessionOutputBuffer.flushBuffer(AbstractSessionOutputBuffer.java:160)
+		at org.apache.http.impl.io.AbstractSessionOutputBuffer.flush(AbstractSessionOutputBuffer.java:168)
+		at org.apache.http.impl.io.ChunkedOutputStream.close(ChunkedOutputStream.java:203)
+		at com.fasterxml.jackson.core.json.UTF8JsonGenerator.close(UTF8JsonGenerator.java:1138)
+		at com.fasterxml.jackson.databind.util.ClassUtil.closeOnFailAndThrowAsIOE(ClassUtil.java:488)
+		at com.fasterxml.jackson.databind.ObjectWriter._configAndWriteValue(ObjectWriter.java:1122)
+		... 49 more
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,585 WARN [DiscoveryClient-InstanceInfoReplicator-0][RetryableEurekaHttpClient.java:130] - Request execution failed with message: org.apache.http.client.ClientProtocolException
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,586 WARN [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:831] - DiscoveryClient_GATEWAY-SERVER/gateway-server:192.168.246.1:53010 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,586 WARN [DiscoveryClient-InstanceInfoReplicator-0][InstanceInfoReplicator.java:125] - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,598 INFO [Thread-69][EurekaServiceRegistry.java:65] - Unregistering application ACCOUNT-SERVICE with eureka with status DOWN
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,599 WARN [Thread-69][DiscoveryClient.java:1303] - Saw local status change event StatusChangeEvent [timestamp=1657370417599, current=DOWN, previous=UP]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,599 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_ACCOUNT-SERVICE/account-service:192.168.246.1:53030: registering service...
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,604 INFO [Thread-69][ExecutorConfigurationSupport.java:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,603 ERROR [DiscoveryClient-InstanceInfoReplicator-0][RedirectingEurekaHttpClient.java:91] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: org.apache.http.NoHttpResponseException: localhost:53000 failed to respond
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.http.NoHttpResponseException: localhost:53000 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 29 more
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,608 WARN [DiscoveryClient-InstanceInfoReplicator-0][RetryableEurekaHttpClient.java:130] - Request execution failed with message: org.apache.http.NoHttpResponseException: localhost:53000 failed to respond
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,618 ERROR [DiscoveryClient-InstanceInfoReplicator-0][RedirectingEurekaHttpClient.java:83] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: org.apache.http.NoHttpResponseException: localhost:53000 failed to respond
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.http.NoHttpResponseException: localhost:53000 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 30 more
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,619 WARN [DiscoveryClient-InstanceInfoReplicator-0][RetryableEurekaHttpClient.java:130] - Request execution failed with message: org.apache.http.NoHttpResponseException: localhost:53000 failed to respond
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,619 WARN [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:831] - DiscoveryClient_ACCOUNT-SERVICE/account-service:192.168.246.1:53030 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,620 WARN [DiscoveryClient-InstanceInfoReplicator-0][InstanceInfoReplicator.java:125] - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,630 INFO [Thread-95][PollingServerListUpdater.java:53] - Shutting down the Executor Pool for PollingServerListUpdater
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,631 INFO [Thread-79][EurekaServiceRegistry.java:65] - Unregistering application UAA-SERVICE with eureka with status DOWN
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,631 WARN [Thread-79][DiscoveryClient.java:1303] - Saw local status change event StatusChangeEvent [timestamp=1657370417631, current=DOWN, previous=UP]
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,631 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_UAA-SERVICE/uaa-service:192.168.246.1:53020: registering service...
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,635 INFO [Thread-79][ShutdownEnabledTimer.java:67] - Shutdown hook removed for: NFLoadBalancer-PingTimer-account-service
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,635 INFO [Thread-79][ShutdownEnabledTimer.java:72] - Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.lang.Runtime.removeShutdownHook(Runtime.java:239)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:632)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:883)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:337)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:271)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1055)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1062)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:975)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:79)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1055)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1062)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1057)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1026)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:945)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,635 ERROR [DiscoveryClient-InstanceInfoReplicator-0][RedirectingEurekaHttpClient.java:91] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: org.apache.http.NoHttpResponseException: localhost:53000 failed to respond
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:89)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.http.NoHttpResponseException: localhost:53000 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 29 more
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,641 WARN [DiscoveryClient-InstanceInfoReplicator-0][RetryableEurekaHttpClient.java:130] - Request execution failed with message: org.apache.http.NoHttpResponseException: localhost:53000 failed to respond
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,646 INFO [Thread-79][ExecutorConfigurationSupport.java:208] - Shutting down ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,648 ERROR [DiscoveryClient-InstanceInfoReplicator-0][RedirectingEurekaHttpClient.java:83] - Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://localhost:53000/eureka/}
+com.sun.jersey.api.client.ClientHandlerException: org.apache.http.NoHttpResponseException: localhost:53000 failed to respond
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:187)
+	at com.sun.jersey.api.client.filter.GZIPContentEncodingFilter.handle(GZIPContentEncodingFilter.java:123)
+	at com.netflix.discovery.EurekaIdentityHeaderFilter.handle(EurekaIdentityHeaderFilter.java:27)
+	at com.sun.jersey.api.client.Client.handle(Client.java:652)
+	at com.sun.jersey.api.client.WebResource.handle(WebResource.java:682)
+	at com.sun.jersey.api.client.WebResource.access$200(WebResource.java:74)
+	at com.sun.jersey.api.client.WebResource$Builder.post(WebResource.java:570)
+	at com.netflix.discovery.shared.transport.jersey.AbstractJerseyEurekaHttpClient.register(AbstractJerseyEurekaHttpClient.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.MetricsCollectingEurekaHttpClient.execute(MetricsCollectingEurekaHttpClient.java:73)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:118)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:79)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.apache.http.NoHttpResponseException: localhost:53000 failed to respond
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:141)
+	at org.apache.http.impl.conn.DefaultHttpResponseParser.parseHead(DefaultHttpResponseParser.java:56)
+	at org.apache.http.impl.io.AbstractMessageParser.parse(AbstractMessageParser.java:259)
+	at org.apache.http.impl.AbstractHttpClientConnection.receiveResponseHeader(AbstractHttpClientConnection.java:294)
+	at org.apache.http.impl.conn.DefaultClientConnection.receiveResponseHeader(DefaultClientConnection.java:257)
+	at org.apache.http.impl.conn.AbstractClientConnAdapter.receiveResponseHeader(AbstractClientConnAdapter.java:230)
+	at org.apache.http.protocol.HttpRequestExecutor.doReceiveResponse(HttpRequestExecutor.java:273)
+	at org.apache.http.protocol.HttpRequestExecutor.execute(HttpRequestExecutor.java:125)
+	at org.apache.http.impl.client.DefaultRequestDirector.tryExecute(DefaultRequestDirector.java:679)
+	at org.apache.http.impl.client.DefaultRequestDirector.execute(DefaultRequestDirector.java:481)
+	at org.apache.http.impl.client.AbstractHttpClient.doExecute(AbstractHttpClient.java:835)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:118)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at com.sun.jersey.client.apache4.ApacheHttpClient4Handler.handle(ApacheHttpClient4Handler.java:173)
+	... 30 more
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,649 WARN [DiscoveryClient-InstanceInfoReplicator-0][RetryableEurekaHttpClient.java:130] - Request execution failed with message: org.apache.http.NoHttpResponseException: localhost:53000 failed to respond
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,650 WARN [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:831] - DiscoveryClient_UAA-SERVICE/uaa-service:192.168.246.1:53020 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:17,650 WARN [DiscoveryClient-InstanceInfoReplicator-0][InstanceInfoReplicator.java:125] - There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:829)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at java.lang.Thread.run(Thread.java:748)
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:18,730 INFO [Thread-61][DiscoveryClient.java:888] - Shutting down DiscoveryClient ...
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:18,740 INFO [Thread-69][DruidDataSource.java:1885] - {dataSource-1} closing ...
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:18,744 INFO [Thread-69][DruidDataSource.java:1955] - {dataSource-1} closed
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:18,749 INFO [Thread-69][DisposableBeanAdapter.java:265] - Invocation of destroy method failed on bean with name 'rocketMQTemplate': java.lang.IllegalStateException: Shutdown in progress
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:18,749 INFO [Thread-69][DisposableBeanAdapter.java:347] - Destroy method 'shutdown' on bean with name 'defaultMQProducer' threw an exception: java.lang.IllegalStateException: Shutdown in progress
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:18,750 INFO [Thread-69][DiscoveryClient.java:888] - Shutting down DiscoveryClient ...
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:18,790 INFO [Thread-79][DruidDataSource.java:1885] - {dataSource-1} closing ...
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:18,794 INFO [Thread-79][DruidDataSource.java:1955] - {dataSource-1} closed
+[${project.name}][${env:SERVER_PORT}] 2022-07-09 20:40:18,797 INFO [Thread-79][DiscoveryClient.java:888] - Shutting down DiscoveryClient ...

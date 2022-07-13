@@ -1,0 +1,284 @@
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:13,740 INFO [main][DefaultApplicationProvider.java:85] - App ID is set to consumer-service by app.id property from System Property
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:13,751 INFO [main][DefaultServerProvider.java:108] - Environment is set to [dev] by JVM system property 'env'.
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:13,828 WARN [main][DefaultMetaServerProvider.java:39] - Could not find meta server address, because it is not available in neither (1) JVM system property 'apollo.meta', (2) OS env variable 'APOLLO_META' (3) property 'apollo.meta' from server.properties nor (4) property 'apollo.meta' from app.properties
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:13,837 INFO [main][MetaDomainConsts.java:93] - Located meta server address http://localhost:8080 for env DEV from com.ctrip.framework.apollo.core.internals.LegacyMetaServerProvider
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:33,444 INFO [main][SpringApplication.java:675] - No active profile set, falling back to default profiles: default
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:34,592 INFO [main][RepositoryConfigurationDelegate.java:244] - Multiple Spring Data modules found, entering strict repository configuration mode!
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:34,594 INFO [main][RepositoryConfigurationDelegate.java:126] - Bootstrapping Spring Data repositories in DEFAULT mode.
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:34,623 INFO [main][RepositoryConfigurationDelegate.java:182] - Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:34,721 WARN [main][EndpointId.java:135] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:34,808 INFO [main][ConfigurationClassPostProcessor.java:380] - Cannot enhance @Configuration bean definition 'com.ctrip.framework.apollo.spring.boot.ApolloAutoConfiguration' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:34,951 INFO [main][GenericScope.java:294] - BeanFactory id=633a4e2a-67fd-3399-ae0a-74659665cb77
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:34,972 WARN [main][PropertySourcesDeducer.java:75] - Multiple PropertySourcesPlaceholderConfigurer beans registered [propertySourcesPlaceholderConfigurer, org.springframework.context.support.PropertySourcesPlaceholderConfigurer], falling back to Environment
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,001 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'cn.itcast.wanxinp2p.consumer.agent.AccountApiAgent' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,002 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'cn.itcast.wanxinp2p.consumer.agent.DepositoryAgentApiAgent' of type [org.springframework.cloud.openfeign.FeignClientFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,016 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration' of type [com.alibaba.druid.spring.boot.autoconfigure.stat.DruidSpringAopConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,022 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQAutoConfiguration$$EnhancerBySpringCGLIB$$8728be72] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,032 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rocketmq-org.apache.rocketmq.spring.autoconfigure.RocketMQProperties' of type [org.apache.rocketmq.spring.autoconfigure.RocketMQProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,499 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'defaultMQProducer' of type [org.apache.rocketmq.client.producer.DefaultMQProducer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,501 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration$$EnhancerBySpringCGLIB$$ba262f07] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,506 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration$$EnhancerBySpringCGLIB$$6c72f120] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,508 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$$EnhancerBySpringCGLIB$$2789d70f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,511 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties' of type [org.springframework.boot.autoconfigure.jackson.JacksonProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,513 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'standardJacksonObjectMapperBuilderCustomizer' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration$StandardJackson2ObjectMapperBuilderCustomizer] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,517 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration$$EnhancerBySpringCGLIB$$4e554e3d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,523 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'parameterNamesModule' of type [com.fasterxml.jackson.module.paramnames.ParameterNamesModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,523 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration' of type [org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$$EnhancerBySpringCGLIB$$9c31cc96] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,545 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jsonComponentModule' of type [org.springframework.boot.jackson.JsonComponentModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,545 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.data.web.config.SpringDataJacksonConfiguration' of type [org.springframework.data.web.config.SpringDataJacksonConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,549 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonGeoModule' of type [org.springframework.data.geo.GeoModule] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,551 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapperBuilder' of type [org.springframework.http.converter.json.Jackson2ObjectMapperBuilder] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:35,567 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'jacksonObjectMapper' of type [com.fasterxml.jackson.databind.ObjectMapper] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:36,759 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'rocketMQTemplate' of type [org.apache.rocketmq.spring.core.RocketMQTemplate] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:36,762 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'transactionHandlerRegistry' of type [org.apache.rocketmq.spring.config.TransactionHandlerRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:36,797 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5e92af76] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:36,913 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'spring.datasource.druid-com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties' of type [com.alibaba.druid.spring.boot.autoconfigure.properties.DruidStatProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:36,924 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'advisor' of type [org.springframework.aop.support.RegexpMethodPointcutAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:36,925 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'hmilyFeignConfiguration' of type [org.dromara.hmily.springcloud.configuration.HmilyFeignConfiguration$$EnhancerBySpringCGLIB$$8ce3c842] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:36,936 INFO [main][PostProcessorRegistrationDelegate.java:330] - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$7aacb273] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:37,193 INFO [main][TomcatWebServer.java:90] - Tomcat initialized with port(s): 53050 (http)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:37,207 INFO [main][DirectJDKLog.java:173] - Initializing ProtocolHandler ["http-nio-53050"]
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:37,214 INFO [main][DirectJDKLog.java:173] - Starting service [Tomcat]
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:37,215 INFO [main][DirectJDKLog.java:173] - Starting Servlet engine: [Apache Tomcat/9.0.16]
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:37,220 INFO [main][DirectJDKLog.java:173] - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [D:\dev_tools\java\jdk1.8.0_131\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;D:\dev_tools\MySQL\MySQL Server8.0\bin;D:\dev_tools\maven\apache-maven-3.6.3\bin;D:\dev_tools\java\jdk1.8.0_131\bin;D:\dev_tools\java\jre1.8.0_131\bin;C:\Program Files\Common Files\Oracle\Java\javapath;D:\dev_tools\maven\nexus\nexus-3.20.1-01\bin;D:\dev_tools\VMware Workstation\bin\;D:\dev_tools\oracle\app\product\11.2.0\dbhome_1\bin;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;D:\dev_tools\TortoiseSVN\bin;D:\tools\nvm;C:\Program Files\nodejs;D:\dev_tools\tomcat\apache-tomcat-8.5.73\bin;D:\dev_tools\tomcat\apache-tomcat-8.5.73\bin;D:\dev_tools\gradle\gradle-7.4\bin;D:\dev_tools\Xftp_7.0\xftp\;D:\dev_tools\tomcat\apache-tomcat-8.5.73\lib;C:\Users\admin\AppData\Local\Yarn\bin;D:\download\googleDownload\apache压力测试\apache-jmeter-5.4.3\apache-jmeter-5.4.3\bin;D:\dev_tools\git\cmd;%ROCKETMQ_HOME%\bin;;.]
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:37,334 INFO [main][DirectJDKLog.java:173] - Initializing Spring embedded WebApplicationContext
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:37,334 INFO [main][ServletWebServerApplicationContext.java:296] - Root WebApplicationContext: initialization completed in 3874 ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:37,452 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:37,452 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:37,460 INFO [main][DynamicPropertyFactory.java:281] - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@64757d56
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:37,563 INFO [main][DruidDataSourceAutoConfigure.java:56] - Init DruidDataSource
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:37,849 INFO [main][DruidDataSource.java:1002] - {dataSource-1} inited
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:39,314 INFO [main][InetUtils.java:170] - Cannot determine local hostname
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:39,742 INFO [main][HikariDataSource.java:110] - HikariPool-1 - Starting...
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:39,758 INFO [main][HikariDataSource.java:123] - HikariPool-1 - Start completed.
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:39,803 INFO [main][HmilyLogo.java:49] - 
+
+
+    __  __          _ __     
+   / / / /___ ___  (_) /_  __
+  / /_/ / __ `__ \/ / / / / /
+ / __  / / / / / / / / /_/ / 
+/_/ /_/_/ /_/ /_/_/_/\__, /  
+                    /____/   
+
+ :: Hmily :: (v2.0.5-RELEASE)
+
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:39,812 INFO [main][AutowiredAnnotationBeanPostProcessor.java:342] - Inconsistent constructor declaration on bean with name 'hmilyTransactionSelfRecoveryScheduled': single autowire-marked constructor flagged as optional - this constructor is effectively required since there is no default constructor to fall back to: public org.dromara.hmily.core.schedule.HmilyTransactionSelfRecoveryScheduled(org.dromara.hmily.common.config.HmilyConfig)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:40,819 INFO [main][EndpointLinksResolver.java:59] - Exposing 2 endpoint(s) beneath base path '/actuator'
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:40,892 INFO [main][PropertySourcedRequestMappingHandlerMapping.java:69] - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:40,901 WARN [main][URLConfigurationSource.java:121] - No URLs will be polled as dynamic configuration sources.
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:40,901 INFO [main][URLConfigurationSource.java:122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:40,999 INFO [main][ExecutorConfigurationSupport.java:171] - Initializing ExecutorService 'applicationTaskExecutor'
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:42,117 INFO [main][SLF4JLogger.java:71] - Cluster created with settings {hosts=[localhost:27017], mode=SINGLE, requiredClusterType=UNKNOWN, serverSelectionTimeout='30000 ms', maxWaitQueueSize=500}
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:43,612 INFO [main][InetUtils.java:170] - Cannot determine local hostname
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:43,762 INFO [main][InstanceInfoFactory.java:71] - Setting initial instance status as: STARTING
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:43,787 INFO [main][DiscoveryClient.java:349] - Initializing Eureka in region us-east-1
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:43,837 INFO [main][DiscoveryJerseyProvider.java:70] - Using JSON encoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:43,837 INFO [main][DiscoveryJerseyProvider.java:71] - Using JSON decoding codec LegacyJacksonJson
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:43,922 INFO [main][DiscoveryJerseyProvider.java:80] - Using XML encoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:43,922 INFO [main][DiscoveryJerseyProvider.java:81] - Using XML decoding codec XStreamXml
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,045 INFO [main][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,183 INFO [cluster-ClusterId{value='62cd64fe1a1e0b531c255bf4', description='null'}-localhost:27017][SLF4JLogger.java:76] - Exception in monitor thread while connecting to server localhost:27017
+com.mongodb.MongoSocketOpenException: Exception opening socket
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:67)
+	at com.mongodb.internal.connection.InternalStreamConnection.open(InternalStreamConnection.java:126)
+	at com.mongodb.internal.connection.DefaultServerMonitor$ServerMonitorRunnable.run(DefaultServerMonitor.java:117)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.waitForConnect(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(DualStackPlainSocketImpl.java:85)
+	at java.net.AbstractPlainSocketImpl.doConnect(AbstractPlainSocketImpl.java:350)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(AbstractPlainSocketImpl.java:206)
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:188)
+	at java.net.PlainSocketImpl.connect(PlainSocketImpl.java:172)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at com.mongodb.internal.connection.SocketStreamHelper.initialize(SocketStreamHelper.java:64)
+	at com.mongodb.internal.connection.SocketStream.open(SocketStream.java:62)
+	... 3 more
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,248 INFO [main][DiscoveryClient.java:958] - Disable delta property : false
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,249 INFO [main][DiscoveryClient.java:959] - Single vip registry refresh property : null
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,249 INFO [main][DiscoveryClient.java:960] - Force full registry fetch : false
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,249 INFO [main][DiscoveryClient.java:961] - Application is null : false
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,249 INFO [main][DiscoveryClient.java:962] - Registered Applications size is zero : true
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,249 INFO [main][DiscoveryClient.java:964] - Application version is -1: true
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,250 INFO [main][DiscoveryClient.java:1047] - Getting all instance registry info from the eureka server
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,340 INFO [main][DiscoveryClient.java:1056] - The response status is 200
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,342 INFO [main][DiscoveryClient.java:1270] - Starting heartbeat executor: renew interval is: 30
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,345 INFO [main][InstanceInfoReplicator.java:60] - InstanceInfoReplicator onDemand update allowed rate per min is 4
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,349 INFO [main][DiscoveryClient.java:449] - Discovery Client initialized at timestamp 1657627904348 with initial instances count: 0
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,352 INFO [main][EurekaServiceRegistry.java:42] - Registering application CONSUMER-SERVICE with eureka with status UP
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,353 INFO [main][DiscoveryClient.java:1305] - Saw local status change event StatusChangeEvent [timestamp=1657627904353, current=UP, previous=STARTING]
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,356 INFO [main][DocumentationPluginsBootstrapper.java:160] - Context refreshed
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,356 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:826] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:192.168.246.1:53050: registering service...
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,369 INFO [main][DocumentationPluginsBootstrapper.java:163] - Found 1 custom documentation plugin(s)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,406 INFO [main][ApiListingReferenceScanner.java:41] - Scanning for api listing references
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,436 INFO [DiscoveryClient-InstanceInfoReplicator-0][DiscoveryClient.java:835] - DiscoveryClient_CONSUMER-SERVICE/consumer-service:192.168.246.1:53050 - registration status: 204
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,560 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: handleUsingGET_1
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,561 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: handleUsingGET_2
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,562 INFO [main][CachingOperationNameGenerator.java:40] - Generating unique operation named: handleUsingGET_3
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,593 INFO [main][DirectJDKLog.java:173] - Starting ProtocolHandler ["http-nio-53050"]
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,613 INFO [main][TomcatWebServer.java:204] - Tomcat started on port(s): 53050 (http) with context path '/consumer'
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,615 INFO [main][EurekaAutoServiceRegistration.java:141] - Updating port to 53050
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,617 INFO [main][StartupInfoLogger.java:59] - Started ConsumerService in 40.264 seconds (JVM running for 43.704)
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,853 INFO [RMI TCP Connection(6)-192.168.0.102][DirectJDKLog.java:173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,853 INFO [RMI TCP Connection(6)-192.168.0.102][FrameworkServlet.java:524] - Initializing Servlet 'dispatcherServlet'
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:11:44,869 INFO [RMI TCP Connection(6)-192.168.0.102][FrameworkServlet.java:546] - Completed initialization in 16 ms
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:12:14,351 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:958] - Disable delta property : false
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:12:14,353 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:959] - Single vip registry refresh property : null
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:12:14,353 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:960] - Force full registry fetch : false
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:12:14,353 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:961] - Application is null : false
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:12:14,354 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:962] - Registered Applications size is zero : true
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:12:14,354 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:964] - Application version is -1: false
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:12:14,354 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:1047] - Getting all instance registry info from the eureka server
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:12:14,401 INFO [DiscoveryClient-CacheRefreshExecutor-0][DiscoveryClient.java:1056] - The response status is 200
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:13:40,472 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:13:40,580 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:13:44,603 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:14:40,504 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:14:40,590 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:14:44,613 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:15:40,515 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:15:40,608 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:15:44,632 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:16:40,522 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:16:40,617 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:16:44,258 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:16:44,649 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:17:40,526 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:17:40,621 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:17:44,658 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:18:40,536 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:18:40,628 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:18:44,661 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:19:40,555 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:19:40,633 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:19:44,679 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:20:40,573 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:20:40,650 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:20:44,690 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:21:40,592 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:21:40,654 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:21:44,272 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:21:44,703 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:22:40,597 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:22:40,662 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:22:44,709 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:23:40,608 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:23:40,675 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:23:44,713 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:24:40,623 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:24:40,685 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:24:44,715 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:25:40,634 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:25:40,697 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:25:44,732 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:26:40,642 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:26:40,703 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:26:44,279 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:26:44,747 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:27:40,649 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:27:40,713 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:27:44,755 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:28:40,667 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:28:40,730 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:28:44,767 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:29:40,685 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:29:40,747 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:29:44,780 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:30:40,697 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:30:40,759 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:30:44,784 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:31:40,713 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:31:40,760 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:31:44,289 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:31:44,789 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:32:40,722 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:32:40,770 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:32:44,806 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:33:40,725 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:33:40,786 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:33:44,816 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:34:40,733 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:34:40,796 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:34:44,829 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:35:40,752 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:35:40,798 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:35:44,842 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:36:40,760 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:36:40,806 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:36:44,297 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:36:44,846 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:37:40,763 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:37:40,811 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:37:44,854 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:38:40,776 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:38:40,822 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:38:44,866 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:39:40,787 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:39:40,833 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:39:44,877 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:40:40,799 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:40:40,846 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:40:44,891 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:41:40,817 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:41:40,864 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:41:44,304 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:41:44,897 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:42:40,827 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:42:40,874 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:42:44,912 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:43:40,838 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:43:40,883 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:43:44,923 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:44:40,844 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:44:40,895 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:44:44,938 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:45:40,862 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:45:40,908 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:45:44,941 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:46:40,875 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:46:40,922 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:46:44,321 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:46:44,946 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:47:40,890 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:47:40,938 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:47:44,955 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:48:40,897 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:48:40,944 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:48:44,969 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:49:40,909 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:49:40,958 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:49:44,978 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:50:40,914 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:50:40,960 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:50:44,982 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:51:40,921 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:51:40,969 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:51:44,334 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:51:44,988 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:52:40,937 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:52:40,984 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:52:45,003 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:53:40,946 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:53:40,994 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:53:45,012 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:54:40,962 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:54:41,012 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:54:45,030 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:55:40,970 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:55:41,018 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:55:45,039 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:56:40,985 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:56:41,033 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:56:44,347 INFO [AsyncResolver-bootstrap-executor-0][ConfigClusterResolver.java:43] - Resolving eureka endpoints via configuration
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:56:45,050 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:57:40,998 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:57:41,046 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:57:45,067 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:58:41,013 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:58:41,059 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:58:45,078 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:59:41,021 INFO [hmilyTransaction-hmily-transaction-self-recovery-18][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:59:41,069 INFO [hmilyTransaction-hmily-transaction-self-recovery-36][LogUtil.java:87] - self recovery execute delayTime:60
+[${project.name}][${env:SERVER_PORT}] 2022-07-12 20:59:45,090 INFO [hmilyTransaction-hmily-transaction-self-recovery-54][LogUtil.java:87] - self recovery execute delayTime:60

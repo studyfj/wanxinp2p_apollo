@@ -6,6 +6,7 @@ import cn.itcast.wanxinp2p.api.consumer.model.ConsumerDTO;
 import cn.itcast.wanxinp2p.api.consumer.model.ConsumerRegisterDTO;
 import cn.itcast.wanxinp2p.api.consumer.model.ConsumerRequest;
 import cn.itcast.wanxinp2p.api.depository.model.BankCardDTO;
+import cn.itcast.wanxinp2p.api.depository.model.DepositoryConsumerResponse;
 import cn.itcast.wanxinp2p.api.depository.model.GatewayRequest;
 import cn.itcast.wanxinp2p.common.domain.*;
 import cn.itcast.wanxinp2p.common.util.CodeNoUtil;
@@ -162,5 +163,26 @@ public class ConsumerServiceImpl extends ServiceImpl<ConsumerMapper, Consumer> i
         RestResponse<GatewayRequest> result = depositoryAgentApiAgent.createConsumer(consumerRequest);
 
         return null;
+    }
+
+    @Transactional
+    @Override
+    public Boolean modifyResult(DepositoryConsumerResponse response) {
+        // 获取数据
+        String respCode = response.getRespCode();
+        Integer code = respCode.equalsIgnoreCase(DepositoryReturnCode.RETURN_CODE_00000.getCode()) ? StatusCode.STATUS_IN.getCode() : StatusCode.STATUS_FAIL.getCode();
+        // 更新用户信息
+        Consumer consumer = getByRequestNo(response.getRequestNo());
+        update(Wrappers.<Consumer>lambdaUpdate().eq(Consumer::getId, consumer.getId())
+                .set(Consumer::getIsBindCard, code).set(Consumer::getStatus, code));
+        // 更新银行卡信息
+        return bankCardService.update(Wrappers.<BankCard>lambdaUpdate()
+                .eq(BankCard::getConsumerId, consumer.getId())
+                .set(BankCard::getStatus, code).set(BankCard::getBankCode, response.getBankCode())
+                .set(BankCard::getBankName, response.getBankName()));
+    }
+
+    private Consumer getByRequestNo(String requestNo){
+        return getOne(Wrappers.<Consumer>lambdaQuery().eq(Consumer::getRequestNo,requestNo));
     }
 }

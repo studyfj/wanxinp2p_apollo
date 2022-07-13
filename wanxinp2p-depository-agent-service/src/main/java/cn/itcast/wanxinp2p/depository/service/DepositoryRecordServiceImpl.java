@@ -9,6 +9,7 @@ import cn.itcast.wanxinp2p.depository.common.constant.DepositoryRequestTypeCode;
 import cn.itcast.wanxinp2p.depository.entity.DepositoryRecord;
 import cn.itcast.wanxinp2p.depository.mapper.DepositoryRecordMapper;
 import com.alibaba.fastjson.JSON;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -58,5 +59,15 @@ public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMap
         depositoryRecord.setCreateDate(LocalDateTime.now());
         depositoryRecord.setRequestStatus(StatusCode.STATUS_OUT.getCode());
         return depositoryRecord;
+    }
+
+
+    @Override
+    public Boolean modifyRequestStatus(String requestNo, Integer requestsStatus) {
+
+        return update(Wrappers.<DepositoryRecord>lambdaUpdate()
+                .eq(DepositoryRecord::getRequestNo, requestNo)
+                .set(DepositoryRecord::getRequestStatus, requestsStatus)
+                .set(DepositoryRecord::getConfirmDate, LocalDateTime.now()));
     }
 }
