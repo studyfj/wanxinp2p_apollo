@@ -56,7 +56,7 @@ public class ConsumerServiceImpl extends ServiceImpl<ConsumerMapper, Consumer> i
         return getByMobile(mobile) != null ? 1 : 0;
     }
 
-    private ConsumerDTO getByMobile(String mobile) {
+    public ConsumerDTO getByMobile(String mobile) {
         QueryWrapper<Consumer> wrapper = new QueryWrapper<>();
         wrapper.eq("mobile", mobile);
         Consumer consumer = this.baseMapper.selectOne(wrapper);

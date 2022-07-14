@@ -1,6 +1,7 @@
 package cn.itcast.wanxinp2p.consumer.controller;
 
 import cn.itcast.wanxinp2p.api.consumer.ConsumerAPI;
+import cn.itcast.wanxinp2p.api.consumer.model.ConsumerDTO;
 import cn.itcast.wanxinp2p.api.consumer.model.ConsumerRegisterDTO;
 import cn.itcast.wanxinp2p.api.consumer.model.ConsumerRequest;
 import cn.itcast.wanxinp2p.api.depository.model.GatewayRequest;
@@ -8,6 +9,7 @@ import cn.itcast.wanxinp2p.common.domain.RestResponse;
 import cn.itcast.wanxinp2p.common.util.EncryptUtil;
 import cn.itcast.wanxinp2p.consumer.common.util.SecurityUtil;
 import cn.itcast.wanxinp2p.consumer.service.ConsumerService;
+import cn.itcast.wanxinp2p.consumer.service.impl.ConsumerServiceImpl;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
@@ -53,4 +55,13 @@ public class ConsumerController implements ConsumerAPI {
         consumerRequest.setMobile(mobile);
         return consumerService.createConsumer(consumerRequest);
     }
+
+    @Override
+    @ApiOperation("获取登录用户信息")
+    @GetMapping("/l/currConsumer")
+    public RestResponse<ConsumerDTO> getCurrConsumer() {
+        ConsumerDTO consumerDTO = ((ConsumerServiceImpl)consumerService).getByMobile(SecurityUtil.getUser().getMobile());
+        return RestResponse.success(consumerDTO);
+    }
+
 }
