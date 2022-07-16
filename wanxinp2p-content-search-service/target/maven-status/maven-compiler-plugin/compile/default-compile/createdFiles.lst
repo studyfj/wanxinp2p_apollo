@@ -1,0 +1,7 @@
+cn\itcast\wanxinp2p\search\common\constant\ContentSearchErrorCode.class
+cn\itcast\wanxinp2p\search\ContentSearchService.class
+cn\itcast\wanxinp2p\search\config\ElasticsearchConfig.class
+cn\itcast\wanxinp2p\search\common\intercept\GlobalExceptionHandler.class
+cn\itcast\wanxinp2p\search\service\ProjectIndexService.class
+cn\itcast\wanxinp2p\search\model\ProjectQueryParamsDTO.class
+cn\itcast\wanxinp2p\search\config\SwaggerConfiguration.class
