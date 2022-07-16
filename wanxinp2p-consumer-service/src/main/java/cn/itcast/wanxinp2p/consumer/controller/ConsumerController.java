@@ -60,8 +60,16 @@ public class ConsumerController implements ConsumerAPI {
     @ApiOperation("获取登录用户信息")
     @GetMapping("/l/currConsumer")
     public RestResponse<ConsumerDTO> getCurrConsumer() {
+        // 这里取不到值，需要更改 day08-16显示
         ConsumerDTO consumerDTO = ((ConsumerServiceImpl)consumerService).getByMobile(SecurityUtil.getUser().getMobile());
         return RestResponse.success(consumerDTO);
     }
 
+    @Override
+    @ApiOperation("获取登录用户信息")
+    @GetMapping("/my/consumers")
+    public RestResponse<ConsumerDTO> getMyConsumer() {
+        ConsumerDTO consumerDTO = ((ConsumerServiceImpl)consumerService).getByMobile(SecurityUtil.getUser().getMobile());
+        return RestResponse.success(consumerDTO);
+    }
 }

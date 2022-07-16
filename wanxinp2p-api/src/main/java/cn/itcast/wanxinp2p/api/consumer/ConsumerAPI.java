@@ -30,11 +30,17 @@ public interface ConsumerAPI {
     RestResponse<GatewayRequest> createConsumer(ConsumerRequest consumerRequest);
 
     /**
-     * 获得当前登录用户
+     * 获得当前登录用户,这个是微服务使用的
      * @return
      */
     RestResponse<ConsumerDTO> getCurrConsumer();
 
+
+    /**
+     * 获取当前登录用户,给前端使用
+     * @return
+     */
+    RestResponse<ConsumerDTO> getMyConsumer();
 
 
 }

@@ -1,4 +1,4 @@
-package cn.itcast.wanxinp2p.transaction.service;
+package cn.itcast.wanxinp2p.api.transaction.model;
 
 import io.swagger.annotations.ApiModel;
 import io.swagger.annotations.ApiModelProperty;
