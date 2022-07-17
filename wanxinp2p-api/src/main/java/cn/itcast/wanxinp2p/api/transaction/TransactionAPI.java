@@ -45,4 +45,17 @@ public interface TransactionAPI {
      */
     RestResponse<String> projectsApprovalStatus(Long id, String approveStatus);
 
+    /**
+     * 标的信息快速检索
+     * @param projectQueryDTO
+     * @param pageNo
+     * @param pageSize
+     * @param sortBy
+     * @param order
+     * @return
+     */
+    RestResponse<PageVO<ProjectDTO>> queryProjects(ProjectQueryDTO projectQueryDTO,
+                                                   Integer pageNo, Integer pageSize, String sortBy,String order);
+
+
 }

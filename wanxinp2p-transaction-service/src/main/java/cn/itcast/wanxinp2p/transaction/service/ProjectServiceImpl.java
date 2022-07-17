@@ -7,6 +7,7 @@ import cn.itcast.wanxinp2p.api.transaction.model.ProjectQueryDTO;
 import cn.itcast.wanxinp2p.common.domain.*;
 import cn.itcast.wanxinp2p.common.util.CodeNoUtil;
 import cn.itcast.wanxinp2p.transaction.agent.ConsumerApiAgent;
+import cn.itcast.wanxinp2p.transaction.agent.ContentSearchApiAgent;
 import cn.itcast.wanxinp2p.transaction.agent.DepositoryAgentApiAgent;
 import cn.itcast.wanxinp2p.transaction.common.constant.TransactionErrorCode;
 import cn.itcast.wanxinp2p.transaction.entity.Project;
@@ -200,4 +201,18 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project> impl
         return projectDTO;
     }
 
+    @Autowired
+    private ContentSearchApiAgent contentSearchApiAgent;
+    @Override
+    public PageVO<ProjectDTO> queryProjects(ProjectQueryDTO projectQueryDTO,
+                                            String order, Integer pageNo, Integer pageSize, String sortBy) {
+        RestResponse<PageVO<ProjectDTO>> esResponse =
+                contentSearchApiAgent.queryProjectIndex(projectQueryDTO,
+                        pageNo, pageSize, sortBy,
+                        order);
+        if (!esResponse.isSuccessful()) {
+            throw new BusinessException(CommonErrorCode.UNKOWN);
+        }
+        return esResponse.getResult();
+    }
 }
