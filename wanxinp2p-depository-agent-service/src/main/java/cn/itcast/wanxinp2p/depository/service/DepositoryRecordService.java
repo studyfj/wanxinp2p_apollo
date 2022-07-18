@@ -4,6 +4,7 @@ import cn.itcast.wanxinp2p.api.consumer.model.ConsumerRequest;
 import cn.itcast.wanxinp2p.api.depository.model.DepositoryBaseResponse;
 import cn.itcast.wanxinp2p.api.depository.model.DepositoryResponseDTO;
 import cn.itcast.wanxinp2p.api.depository.model.GatewayRequest;
+import cn.itcast.wanxinp2p.api.depository.model.UserAutoPreTransactionRequest;
 import cn.itcast.wanxinp2p.api.transaction.model.ProjectDTO;
 import cn.itcast.wanxinp2p.depository.entity.DepositoryRecord;
 import com.baomidou.mybatisplus.extension.service.IService;
@@ -38,4 +39,12 @@ public interface DepositoryRecordService extends IService<DepositoryRecord> {
      * @return
      */
     DepositoryResponseDTO<DepositoryBaseResponse> createProject(ProjectDTO projectDTO);
+
+    /**
+     * 投标预处理
+     * @param userAutoPreTransactionRequest
+     * @return
+     */
+    DepositoryResponseDTO<DepositoryBaseResponse> userAutoPreTransaction(UserAutoPreTransactionRequest userAutoPreTransactionRequest);
+
 }

@@ -15,7 +15,7 @@ import java.time.LocalDateTime;
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
-@ApiModel(value="DepositoryRecordDTO对象", description="存管交易记录表")
+@ApiModel(value = "DepositoryRecordDTO对象", description = "存管交易记录表")
 public class DepositoryRecordDTO implements Serializable {
 
 
@@ -46,8 +46,8 @@ public class DepositoryRecordDTO implements Serializable {
     @ApiModelProperty(value = "消息确认时间")
     private LocalDateTime confirmDate;
 
-	@ApiModelProperty("返回数据")
-	private String responseData;
+    @ApiModelProperty("返回数据")
+    private String responseData;
 
 
 }

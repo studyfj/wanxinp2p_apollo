@@ -1,9 +1,7 @@
 package cn.itcast.wanxinp2p.transaction.controller;
 
 import cn.itcast.wanxinp2p.api.transaction.TransactionAPI;
-import cn.itcast.wanxinp2p.api.transaction.model.PageVO;
-import cn.itcast.wanxinp2p.api.transaction.model.ProjectDTO;
-import cn.itcast.wanxinp2p.api.transaction.model.ProjectQueryDTO;
+import cn.itcast.wanxinp2p.api.transaction.model.*;
 import cn.itcast.wanxinp2p.common.domain.RestResponse;
 import cn.itcast.wanxinp2p.transaction.service.ProjectService;
 import io.swagger.annotations.Api;
@@ -12,6 +10,8 @@ import io.swagger.annotations.ApiImplicitParams;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 /**
  * @author fengjun
@@ -85,7 +85,35 @@ public class TransactionController implements TransactionAPI {
     @PostMapping("/projects/indexes/q")
     public RestResponse<PageVO<ProjectDTO>> queryProjects(@RequestBody
                                                                   ProjectQueryDTO projectQueryDTO, Integer pageNo, Integer pageSize, String
-                                                                  sortBy, String order){
-        return null;
+                                                                  sortBy, String order) {
+        PageVO<ProjectDTO> projectDTOS = projectService.queryProjects(projectQueryDTO, order, pageNo, pageSize, sortBy);
+        return RestResponse.success(projectDTOS);
+    }
+
+    @Override
+    @ApiOperation("通过ids获取多个标的")
+    @GetMapping("/projects/{ids}")
+    public RestResponse<List<ProjectDTO>> queryProjectsIds(@PathVariable String ids) {
+        List<ProjectDTO> projectDTOS = projectService.queryProjectsIds(ids);
+        return RestResponse.success(projectDTOS);
+    }
+
+    @Override
+    @ApiOperation("根据标的id查询投标记录")
+    @GetMapping("/tenders/projects/{id}")
+    public RestResponse<List<TenderOverviewDTO>> queryTendersByProjectId(@PathVariable Long id) {
+        List<TenderOverviewDTO> tenderOverviewDTOS = projectService.queryTendersByProjectId(id);
+        return RestResponse.success(tenderOverviewDTOS);
+    }
+
+    @Override
+    @ApiOperation("用户投标")
+    @ApiImplicitParam(name = "projectInvestDTO", value = "投标信息",
+            required = true, dataType = "ProjectInvestDTO", paramType =
+            "body")
+    @PostMapping("/my/tenders")
+    public RestResponse<TenderDTO> createTender(@RequestBody ProjectInvestDTO projectInvestDTO) {
+
+        return RestResponse.success(projectService.createTender(projectInvestDTO));
     }
 }

@@ -1,9 +1,9 @@
 package cn.itcast.wanxinp2p.api.transaction;
 
-import cn.itcast.wanxinp2p.api.transaction.model.PageVO;
-import cn.itcast.wanxinp2p.api.transaction.model.ProjectDTO;
-import cn.itcast.wanxinp2p.api.transaction.model.ProjectQueryDTO;
+import cn.itcast.wanxinp2p.api.transaction.model.*;
 import cn.itcast.wanxinp2p.common.domain.RestResponse;
+
+import java.util.List;
 
 /**
  * @author fengjun
@@ -56,6 +56,27 @@ public interface TransactionAPI {
      */
     RestResponse<PageVO<ProjectDTO>> queryProjects(ProjectQueryDTO projectQueryDTO,
                                                    Integer pageNo, Integer pageSize, String sortBy,String order);
+
+    /**
+     * 通过ids获取多个标的
+     * @param ids
+     * @return
+     */
+    RestResponse<List<ProjectDTO>> queryProjectsIds(String ids);
+
+    /**
+     * 根据标的id查询投标记录
+     * @param id
+     * @return
+     */
+    RestResponse<List<TenderOverviewDTO>> queryTendersByProjectId(Long id);
+
+    /**
+     * 用户投标
+     * @param projectInvestDTO
+     * @return
+     */
+    RestResponse<TenderDTO> createTender(ProjectInvestDTO projectInvestDTO);
 
 
 }

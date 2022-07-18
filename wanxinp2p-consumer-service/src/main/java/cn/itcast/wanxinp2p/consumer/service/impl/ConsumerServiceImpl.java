@@ -2,6 +2,7 @@ package cn.itcast.wanxinp2p.consumer.service.impl;
 
 import cn.itcast.wanxinp2p.api.account.model.AccountDTO;
 import cn.itcast.wanxinp2p.api.account.model.AccountRegisterDTO;
+import cn.itcast.wanxinp2p.api.consumer.model.BorrowerDTO;
 import cn.itcast.wanxinp2p.api.consumer.model.ConsumerDTO;
 import cn.itcast.wanxinp2p.api.consumer.model.ConsumerRegisterDTO;
 import cn.itcast.wanxinp2p.api.consumer.model.ConsumerRequest;
@@ -10,6 +11,7 @@ import cn.itcast.wanxinp2p.api.depository.model.DepositoryConsumerResponse;
 import cn.itcast.wanxinp2p.api.depository.model.GatewayRequest;
 import cn.itcast.wanxinp2p.common.domain.*;
 import cn.itcast.wanxinp2p.common.util.CodeNoUtil;
+import cn.itcast.wanxinp2p.common.util.IDCardUtil;
 import cn.itcast.wanxinp2p.consumer.agent.AccountApiAgent;
 import cn.itcast.wanxinp2p.consumer.agent.DepositoryAgentApiAgent;
 import cn.itcast.wanxinp2p.consumer.common.ConsumerErrorCode;
@@ -28,6 +30,8 @@ import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
+
+import java.util.Map;
 
 /**
  * @author fengjun
@@ -51,6 +55,7 @@ public class ConsumerServiceImpl extends ServiceImpl<ConsumerMapper, Consumer> i
 
     @Autowired
     private DepositoryAgentApiAgent depositoryAgentApiAgent;
+
     @Override
     public Integer checkMobile(String mobile) {
         return getByMobile(mobile) != null ? 1 : 0;
@@ -180,6 +185,20 @@ public class ConsumerServiceImpl extends ServiceImpl<ConsumerMapper, Consumer> i
                 .eq(BankCard::getConsumerId, consumer.getId())
                 .set(BankCard::getStatus, code).set(BankCard::getBankCode, response.getBankCode())
                 .set(BankCard::getBankName, response.getBankName()));
+    }
+
+    @Override
+    public BorrowerDTO getBorrower(Long id) {
+        // 可以做个健壮判断 如果用户id不存在 可以抛业务异常对象
+        Consumer consumer = this.baseMapper.selectById(id);
+        BorrowerDTO borrowerDTO = new BorrowerDTO();
+        BeanUtils.copyProperties(consumer, borrowerDTO);
+        // 通过身份证号可以获取年龄性别等信息
+        Map<String, String> info = IDCardUtil.getInfo(consumer.getIdNumber());
+        borrowerDTO.setAge(Integer.parseInt(info.get("age")));
+        borrowerDTO.setGender(info.get("gender"));
+        borrowerDTO.setBirthday(info.get("birthday"));
+        return borrowerDTO;
     }
 
     private Consumer getByRequestNo(String requestNo){
