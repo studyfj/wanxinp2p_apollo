@@ -1,5 +1,6 @@
 package cn.itcast.wanxinp2p.api.transaction;
 
+import cn.itcast.wanxinp2p.api.depository.model.ModifyProjectStatusDTO;
 import cn.itcast.wanxinp2p.api.transaction.model.*;
 import cn.itcast.wanxinp2p.common.domain.RestResponse;
 
@@ -47,6 +48,7 @@ public interface TransactionAPI {
 
     /**
      * 标的信息快速检索
+     *
      * @param projectQueryDTO
      * @param pageNo
      * @param pageSize
@@ -55,10 +57,11 @@ public interface TransactionAPI {
      * @return
      */
     RestResponse<PageVO<ProjectDTO>> queryProjects(ProjectQueryDTO projectQueryDTO,
-                                                   Integer pageNo, Integer pageSize, String sortBy,String order);
+                                                   Integer pageNo, Integer pageSize, String sortBy, String order);
 
     /**
      * 通过ids获取多个标的
+     *
      * @param ids
      * @return
      */
@@ -66,6 +69,7 @@ public interface TransactionAPI {
 
     /**
      * 根据标的id查询投标记录
+     *
      * @param id
      * @return
      */
@@ -73,10 +77,22 @@ public interface TransactionAPI {
 
     /**
      * 用户投标
+     *
      * @param projectInvestDTO
      * @return
      */
     RestResponse<TenderDTO> createTender(ProjectInvestDTO projectInvestDTO);
+
+    /**
+     * 审核标的满标放款
+     *
+     * @param id            标的id
+     * @param approveStatus 审核状态
+     * @param commission    平台佣金
+     * @return
+     */
+    RestResponse<String> loansApprovalStatus(Long id, String approveStatus, String commission);
+
 
 
 }

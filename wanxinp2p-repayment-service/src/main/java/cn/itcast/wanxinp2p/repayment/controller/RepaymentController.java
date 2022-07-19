@@ -1,10 +1,12 @@
 package cn.itcast.wanxinp2p.repayment.controller;
 
+import cn.itcast.wanxinp2p.api.depository.model.ProjectWithTendersDTO;
 import cn.itcast.wanxinp2p.api.repayment.RepaymentApi;
-import cn.itcast.wanxinp2p.api.repayment.model.ProjectWithTendersDTO;
 import cn.itcast.wanxinp2p.common.domain.RestResponse;
+import cn.itcast.wanxinp2p.repayment.service.RepaymentService;
 import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
@@ -15,6 +17,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RepaymentController implements RepaymentApi {
 
+    @Autowired
+    private RepaymentService repaymentService;
 
     @Override
     @ApiOperation("启动还款")
@@ -23,6 +27,7 @@ public class RepaymentController implements RepaymentApi {
             paramType = "body")
     @PostMapping("/l/start-repayment")
     public RestResponse<String> startRepayment(@RequestBody ProjectWithTendersDTO projectWithTendersDTO) {
-        return null;
+        String s = repaymentService.startRepayment(projectWithTendersDTO);
+        return RestResponse.success(s);
     }
 }

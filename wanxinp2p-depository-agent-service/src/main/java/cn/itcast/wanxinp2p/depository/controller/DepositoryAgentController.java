@@ -3,10 +3,7 @@ package cn.itcast.wanxinp2p.depository.controller;
 
 import cn.itcast.wanxinp2p.api.consumer.model.ConsumerRequest;
 import cn.itcast.wanxinp2p.api.depository.DepositoryAgentApi;
-import cn.itcast.wanxinp2p.api.depository.model.DepositoryBaseResponse;
-import cn.itcast.wanxinp2p.api.depository.model.DepositoryResponseDTO;
-import cn.itcast.wanxinp2p.api.depository.model.GatewayRequest;
-import cn.itcast.wanxinp2p.api.depository.model.UserAutoPreTransactionRequest;
+import cn.itcast.wanxinp2p.api.depository.model.*;
 import cn.itcast.wanxinp2p.api.transaction.model.ProjectDTO;
 import cn.itcast.wanxinp2p.common.domain.RestResponse;
 import cn.itcast.wanxinp2p.depository.service.DepositoryRecordService;
@@ -48,7 +45,7 @@ public class DepositoryAgentController implements DepositoryAgentApi {
     @PostMapping("/l/createProject")
     public RestResponse<String> createProject(@RequestBody ProjectDTO projectDTO) {
         DepositoryResponseDTO<DepositoryBaseResponse> depositoryResponse = depositoryRecordService.createProject(projectDTO);
-        RestResponse<String> restResponse=new RestResponse<>();
+        RestResponse<String> restResponse = new RestResponse<>();
         restResponse.setResult(depositoryResponse.getRespData().getRespCode());
         restResponse.setMsg(depositoryResponse.getRespData().getRespMsg());
         return restResponse;
@@ -61,13 +58,14 @@ public class DepositoryAgentController implements DepositoryAgentApi {
             dataType = "UserAutoPreTransactionRequest", paramType =
             "body")
     @PostMapping("/l/user-auto-pre-transaction")
-    public RestResponse<String> userAutoPreTransaction(@RequestBody UserAutoPreTransactionRequest userAutoPreTransactionRequest){
+    public RestResponse<String> userAutoPreTransaction(@RequestBody UserAutoPreTransactionRequest userAutoPreTransactionRequest) {
         DepositoryResponseDTO<DepositoryBaseResponse> response = depositoryRecordService.userAutoPreTransaction(userAutoPreTransactionRequest);
         return getRestResponse(response);
     }
 
     /**
      * 统一处理响应信息
+     *
      * @param depositoryResponse
      * @return
      */
@@ -78,4 +76,24 @@ public class DepositoryAgentController implements DepositoryAgentApi {
         return restResponse;
     }
 
+    @Override
+    @ApiOperation(value = "审核标的满标放款")
+    @ApiImplicitParam(name = "loanRequest", value = "标的满标放款信息", required = true, dataType = "LoanRequest", paramType = "body")
+    @PostMapping("l/confirm-loan")
+    public RestResponse<String> confirmLoan(@RequestBody LoanRequest loanRequest) {
+        DepositoryResponseDTO<DepositoryBaseResponse> response = depositoryRecordService.confirmLoan(loanRequest);
+        return getRestResponse(response);
+    }
+
+    @Override
+    @ApiOperation(value = "修改标的状态")
+    @ApiImplicitParam(name = "modifyProjectStatusDTO", value = "修改标的状态DTO",
+            required = true, dataType = "ModifyProjectStatusDTO",
+            paramType = "body")
+    @PostMapping("l/modify-project-status")
+    public RestResponse<String> modifyProjectStatus(
+            @RequestBody ModifyProjectStatusDTO modifyProjectStatusDTO) {
+        DepositoryResponseDTO<DepositoryBaseResponse> response = depositoryRecordService.modifyProjectStatus(modifyProjectStatusDTO);
+        return getRestResponse(response);
+    }
 }

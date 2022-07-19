@@ -252,4 +252,46 @@ public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMap
         String depositoryUrl = configService.getDepositoryUrl() + "/service";
         return sendHttpGet("USER_AUTO_PRE_TRANSACTION", depositoryUrl, encodeStr, depositoryRecord);
     }
+
+    @Override
+    public DepositoryResponseDTO<DepositoryBaseResponse> confirmLoan(LoanRequest loanRequest) {
+        DepositoryRecord depositoryRecord = new DepositoryRecord(loanRequest.getRequestNo(), DepositoryRequestTypeCode.FULL_LOAN.getCode(),
+                                                                "LoanRequest", loanRequest.getId());
+        // 实习幂等性
+        DepositoryResponseDTO<DepositoryBaseResponse> response = handleIdempotent(depositoryRecord);
+        if (response != null) {
+            return response;
+        }
+        depositoryRecord = getEntityByRequestNo(loanRequest.getRequestNo());
+
+        String jsonString = JSON.toJSONString(loanRequest);
+        String encodeStr = EncryptUtil.encodeUTF8StringBase64(jsonString);
+        // 发送数据到银行存管系统
+        String depositoryUrl = configService.getDepositoryUrl() + "/service";
+        // 拦截器前进行签名
+        return sendHttpGet("CONFIRM_LOAN", depositoryUrl, encodeStr, depositoryRecord);
+    }
+
+    @Override
+    public DepositoryResponseDTO<DepositoryBaseResponse> modifyProjectStatus(ModifyProjectStatusDTO modifyProjectStatusDTO) {
+        // arg2:请求参数类型
+        DepositoryRecord depositoryRecord = new DepositoryRecord(modifyProjectStatusDTO.getRequestNo(), DepositoryRequestTypeCode.MODIFY_STATUS.getCode(),
+                "Project",
+                modifyProjectStatusDTO.getId());
+        // 幂等性实现
+        DepositoryResponseDTO<DepositoryBaseResponse> responseDTO = handleIdempotent(depositoryRecord);
+        if (responseDTO != null) {
+            return responseDTO;
+        }
+        // 根据requestNo获取交易记录
+        depositoryRecord = getEntityByRequestNo(modifyProjectStatusDTO.getRequestNo());
+        // loanRequest 转为 json 进行数据签名
+        final String jsonString = JSON.toJSONString(modifyProjectStatusDTO);
+        // 业务数据报文
+        String reqData = EncryptUtil.encodeUTF8StringBase64(jsonString);
+        // 拼接银行存管系统请求地址
+        String url = configService.getDepositoryUrl() + "/service";
+        // 封装通用方法, 请求银行存管系统
+        return sendHttpGet("MODIFY_PROJECT", url, reqData, depositoryRecord);
+    }
 }

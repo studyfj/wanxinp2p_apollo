@@ -2,7 +2,7 @@ package cn.itcast.wanxinp2p.transaction.service;
 
 import cn.itcast.wanxinp2p.api.consumer.model.BalanceDetailsDTO;
 import cn.itcast.wanxinp2p.api.consumer.model.ConsumerDTO;
-import cn.itcast.wanxinp2p.api.depository.model.UserAutoPreTransactionRequest;
+import cn.itcast.wanxinp2p.api.depository.model.*;
 import cn.itcast.wanxinp2p.api.transaction.model.*;
 import cn.itcast.wanxinp2p.common.domain.*;
 import cn.itcast.wanxinp2p.common.util.CodeNoUtil;
@@ -422,4 +422,91 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project> impl
         return project.getAmount().subtract(amountInvested);
     }
 
+    @Override
+    public String loansApprovalStatus(Long id, String approveStatus, String commission) {
+        // 生成放款明细
+        // 标的信息，投标信息
+        Project project = this.baseMapper.selectById(id); // 标的信息
+        List<Tender> tenders = tenderMapper.selectList(Wrappers.<Tender>lambdaQuery().eq(Tender::getProjectId, id));// 投标人信息多个投标人
+        LoanRequest loanRequest = generateLoanRequest(project, tenders, commission);
+
+        // 放款,请求存管代理服务
+        RestResponse<String> responseOne = depositoryAgentApiAgent.confirmLoan(loanRequest);
+        if (responseOne.getResult().equalsIgnoreCase(DepositoryReturnCode.RETURN_CODE_00000.getCode())) {
+            // 更新投标状态
+            this.modifyStatus(tenders);
+            // 再次请求存管代理，修改状态
+            ModifyProjectStatusDTO modifyProjectStatusDTO = new ModifyProjectStatusDTO();
+            modifyProjectStatusDTO.setId(project.getId());
+            modifyProjectStatusDTO.setRequestNo(loanRequest.getRequestNo());
+            modifyProjectStatusDTO.setProjectStatus(ProjectCode.REPAYING.getCode());
+            modifyProjectStatusDTO.setProjectNo(project.getProjectNo());
+            RestResponse<String> responseTwo = depositoryAgentApiAgent.modifyProjectStatus(modifyProjectStatusDTO);
+            if (responseTwo.getResult().equalsIgnoreCase(DepositoryReturnCode.RETURN_CODE_00000.getCode())) {
+                // 更改状态
+                project.setProjectStatus(ProjectCode.REPAYING.getCode());
+                updateById(project);
+                // 启动还款
+                // 准备数据 标的信息
+                ProjectWithTendersDTO projectWithTendersDTO = new ProjectWithTendersDTO();
+                ProjectDTO projectDTO = convertProjectEntityToDTO(project);
+                projectWithTendersDTO.setProject(projectDTO);
+                List<TenderDTO> tenderDTOS = convertTenderEntityListToDTOList(tenders);
+                projectWithTendersDTO.setTenders(tenderDTOS);
+                // 投资人让利和借款人让利
+                BigDecimal commissionInvestorAnnualRate = configService.getCommissionInvestorAnnualRate();
+                BigDecimal borrowerAnnualRate = configService.getBorrowerAnnualRate();
+                projectWithTendersDTO.setCommissionBorrowerAnnualRate(borrowerAnnualRate);
+                projectWithTendersDTO.setCommissionInvestorAnnualRate(commissionInvestorAnnualRate);
+                // 向还款微服务进行发送请求,涉及到分布式事务问题,用rocketMq进行发送
+                return "审核成功";
+            }else {
+                throw new BusinessException(TransactionErrorCode.E_150113);
+            }
+        }else {
+            throw new BusinessException(TransactionErrorCode.E_150113);
+        }
+    }
+
+    private List<TenderDTO> convertTenderEntityListToDTOList(List<Tender> records) {
+        if (records == null) {
+            return null;
+        }
+        List<TenderDTO> dtoList = new ArrayList<>();
+        records.forEach(tender -> {
+            TenderDTO tenderDTO = new TenderDTO();
+            BeanUtils.copyProperties(tender, tenderDTO);
+            dtoList.add(tenderDTO);
+        });
+        return dtoList;
+    }
+
+    // 更新投标状态
+    public void modifyStatus(List<Tender> tenders) {
+        tenders.forEach(item -> {
+            item.setTenderStatus(TradingCode.LOAN.getCode());
+            tenderMapper.updateById(item);
+        });
+    }
+
+    // 根据标的和投标信息生成明细
+    public LoanRequest generateLoanRequest(Project project, List<Tender> tenders, String commission) {
+        LoanRequest loanRequest = new LoanRequest();
+        // 考虑健壮性 应该判断一下
+        loanRequest.setCommission(new BigDecimal(commission));
+        loanRequest.setId(project.getId());
+        loanRequest.setProjectNo(project.getProjectNo());
+        // 生成请求流水号
+        loanRequest.setRequestNo(CodeNoUtil.getNo(CodePrefixCode.CODE_REQUEST_PREFIX));
+        List<LoanDetailRequest> loanDetailRequests = new ArrayList<>();
+        // 封装放款明细
+        tenders.forEach(item -> {
+            LoanDetailRequest loanDetailRequest = new LoanDetailRequest();
+            loanDetailRequest.setPreRequestNo(item.getRequestNo());
+            loanDetailRequest.setAmount(item.getAmount());
+            loanDetailRequests.add(loanDetailRequest);
+        });
+        loanRequest.setDetails(loanDetailRequests);
+        return loanRequest;
+    }
 }

@@ -3,6 +3,7 @@ package cn.itcast.wanxinp2p.transaction.mapper;
 import cn.itcast.wanxinp2p.transaction.entity.Tender;
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Select;
+import org.springframework.stereotype.Repository;
 
 import java.math.BigDecimal;
 import java.util.List;
@@ -14,6 +15,7 @@ import java.util.List;
  * @date 2022/7/17 11:08
  * @Description 致敬大师，致敬未来的自己
  */
+@Repository
 public interface TenderMapper  extends BaseMapper<Tender> {
     /**
      * 根据标的id, 获取标的已投金额, 如果未投返回0.0

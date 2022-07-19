@@ -9,6 +9,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="wanxinp2p-discover-server" />
         <module name="wanxinp2p-consumer-service" />
+        <module name="wanxinp2p-repayment-service" />
         <module name="wanxinp2p-account-service" />
         <module name="wanxinp2p-common" />
         <module name="wanxinp2p-gateway-server" />
@@ -53,7 +54,7 @@
       <module name="wanxinp2p-discover-server" options="-parameters" />
       <module name="wanxinp2p-file-service" options="" />
       <module name="wanxinp2p-gateway-server" options="-parameters" />
-      <module name="wanxinp2p-repayment-service" options="" />
+      <module name="wanxinp2p-repayment-service" options="-parameters" />
       <module name="wanxinp2p-sms-service" options="" />
       <module name="wanxinp2p-transaction-service" options="-parameters" />
       <module name="wanxinp2p-uaa-service" options="-parameters" />
