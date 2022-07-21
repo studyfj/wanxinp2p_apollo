@@ -5,6 +5,7 @@ import cn.itcast.wanxinp2p.api.depository.model.*;
 import cn.itcast.wanxinp2p.api.transaction.model.ProjectDTO;
 import cn.itcast.wanxinp2p.common.cache.Cache;
 import cn.itcast.wanxinp2p.common.domain.BusinessException;
+import cn.itcast.wanxinp2p.common.domain.PreprocessBusinessTypeCode;
 import cn.itcast.wanxinp2p.common.domain.StatusCode;
 import cn.itcast.wanxinp2p.common.util.EncryptUtil;
 import cn.itcast.wanxinp2p.common.util.RSAUtil;
@@ -123,7 +124,8 @@ public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMap
         // redData签名
         // 发送请求, 获取结果, 如果检验签名失败, 拦截器会在结果中放入: "signature", "false"
         String responseBody = okHttpService.doSyncGet(url + "?serviceName=" + serviceName + "&platformNo=" + platformNo + "&reqData=" + reqData);
-        DepositoryResponseDTO<DepositoryBaseResponse> depositoryResponse = JSON.parseObject(responseBody, new TypeReference<DepositoryResponseDTO<DepositoryBaseResponse>>() {});
+        DepositoryResponseDTO<DepositoryBaseResponse> depositoryResponse = JSON.parseObject(responseBody, new TypeReference<DepositoryResponseDTO<DepositoryBaseResponse>>() {
+        });
         // 响应后, 根据结果更新数据库( 进行签名判断 )
         depositoryRecord.setResponseData(responseBody);
         // 判断签名(signature)是为 false, 如果是说明验签失败!
@@ -183,6 +185,7 @@ public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMap
 
     @Autowired
     private Cache cache;
+
     /**
      * 实现幂等性
      *
@@ -214,7 +217,8 @@ public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMap
         }
         // 3.交易记录存在并且数据状态为已同步，直接返回处理结果
         return JSON.parseObject(depositoryRecordDTO.getResponseData(),
-                new TypeReference<DepositoryResponseDTO<DepositoryBaseResponse>>() {});
+                new TypeReference<DepositoryResponseDTO<DepositoryBaseResponse>>() {
+                });
     }
 
     private DepositoryRecordDTO getByRequestNo(String requestNo) {
@@ -256,7 +260,7 @@ public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMap
     @Override
     public DepositoryResponseDTO<DepositoryBaseResponse> confirmLoan(LoanRequest loanRequest) {
         DepositoryRecord depositoryRecord = new DepositoryRecord(loanRequest.getRequestNo(), DepositoryRequestTypeCode.FULL_LOAN.getCode(),
-                                                                "LoanRequest", loanRequest.getId());
+                "LoanRequest", loanRequest.getId());
         // 实习幂等性
         DepositoryResponseDTO<DepositoryBaseResponse> response = handleIdempotent(depositoryRecord);
         if (response != null) {
@@ -294,4 +298,36 @@ public class DepositoryRecordServiceImpl extends ServiceImpl<DepositoryRecordMap
         // 封装通用方法, 请求银行存管系统
         return sendHttpGet("MODIFY_PROJECT", url, reqData, depositoryRecord);
     }
+
+    @Override
+    public DepositoryResponseDTO<DepositoryBaseResponse> confirmRepayment(RepaymentRequest repaymentRequest) {
+        try {
+            //构造交易记录
+            DepositoryRecord depositoryRecord = new DepositoryRecord(repaymentRequest.getRequestNo(),
+                    PreprocessBusinessTypeCode.REPAYMENT.getCode(), "Repayment", repaymentRequest.getId());
+
+            // 分布式事务幂等性实现
+            DepositoryResponseDTO<DepositoryBaseResponse> responseDTO =
+                    handleIdempotent(depositoryRecord);
+            if (responseDTO != null) {
+                return responseDTO;
+            }
+            // 获取最新交易记录
+            depositoryRecord =
+                    getEntityByRequestNo(repaymentRequest.getRequestNo());
+            /**
+             * 确认还款(调用银行存管系统)
+             */
+            final String jsonString = JSON.toJSONString(repaymentRequest);
+            // 业务数据报文, base64处理，方便传输
+            String reqData = EncryptUtil.encodeUTF8StringBase64(jsonString);
+            // 拼接银行存管系统请求地址
+            String url = configService.getDepositoryUrl() + "/service";
+            // 封装通用方法, 请求银行存管系统
+            return sendHttpGet("CONFIRM_REPAYMENT", url, reqData, depositoryRecord);
+        } catch (Exception e) {
+            throw new BusinessException(DepositoryErrorCode.E_160101);
+        }
+    }
+
 }

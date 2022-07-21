@@ -17,6 +17,7 @@ import cn.itcast.wanxinp2p.transaction.entity.Project;
 import cn.itcast.wanxinp2p.transaction.entity.Tender;
 import cn.itcast.wanxinp2p.transaction.mapper.ProjectMapper;
 import cn.itcast.wanxinp2p.transaction.mapper.TenderMapper;
+import cn.itcast.wanxinp2p.transaction.message.P2pTransactionProducer;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
@@ -27,6 +28,7 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -56,6 +58,9 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project> impl
 
     @Autowired
     private DepositoryAgentApiAgent depositoryAgentApiAgent;
+
+    @Autowired
+    private P2pTransactionProducer p2pTransactionProducer;
 
     @Override
     public ProjectDTO createProject(ProjectDTO projectDTO) {
@@ -219,9 +224,7 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project> impl
     public PageVO<ProjectDTO> queryProjects(ProjectQueryDTO projectQueryDTO,
                                             String order, Integer pageNo, Integer pageSize, String sortBy) {
         RestResponse<PageVO<ProjectDTO>> esResponse =
-                contentSearchApiAgent.queryProjectIndex(projectQueryDTO,
-                        pageNo, pageSize, sortBy,
-                        order);
+                contentSearchApiAgent.queryProjectIndex(projectQueryDTO, pageNo, pageSize, sortBy, order);
         if (!esResponse.isSuccessful()) {
             throw new BusinessException(CommonErrorCode.UNKOWN);
         }
@@ -459,6 +462,7 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project> impl
                 projectWithTendersDTO.setCommissionBorrowerAnnualRate(borrowerAnnualRate);
                 projectWithTendersDTO.setCommissionInvestorAnnualRate(commissionInvestorAnnualRate);
                 // 向还款微服务进行发送请求,涉及到分布式事务问题,用rocketMq进行发送
+                p2pTransactionProducer.updateProjectStatusAndStartRepayment(project, projectWithTendersDTO);
                 return "审核成功";
             }else {
                 throw new BusinessException(TransactionErrorCode.E_150113);
@@ -466,6 +470,12 @@ public class ProjectServiceImpl extends ServiceImpl<ProjectMapper, Project> impl
         }else {
             throw new BusinessException(TransactionErrorCode.E_150113);
         }
+    }
+
+    @Transactional(rollbackFor = BusinessException.class)
+    public Boolean updateProjectStatusAndStartRepayment(Project project) {
+        project.setProjectStatus(ProjectCode.REPAYING.getCode());
+        return updateById(project);
     }
 
     private List<TenderDTO> convertTenderEntityListToDTOList(List<Tender> records) {
