@@ -19,7 +19,7 @@ public interface PlanMapper extends BaseMapper<RepaymentPlan> {
     // 此需求涉及日期的转换，自定义更灵活
     // 为了自己触发测试@Select("select * from repayment_plan where date_format(SHOULD_REPAYMENT_DATE, '%Y-%m-%d') = #{date} and REPAYMENT_STATUS = '0'")
     @Select("select * from repayment_plan where date_format(SHOULD_REPAYMENT_DATE, '%Y-%m-%d') = #{date} and REPAYMENT_STATUS = '0'")
-    List<RepaymentPlan> selectDueRepayment(String date);
+    List<RepaymentPlan> selectDueRepayments(String date);
 
 
     // 下面是用分布式任务调度

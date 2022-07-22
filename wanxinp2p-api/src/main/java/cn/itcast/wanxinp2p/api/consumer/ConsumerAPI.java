@@ -60,5 +60,11 @@ public interface ConsumerAPI {
      */
     RestResponse<BalanceDetailsDTO> getMyBalance();
 
+    /**
+     * 获取借款人用户信息-供微服务访问
+     * @param id 用户标识
+     * @return
+     */
+    RestResponse<BorrowerDTO> getBorrowerMobile(Long id);
 
 }
