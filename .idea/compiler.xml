@@ -16,7 +16,6 @@
         <module name="wanxinp2p-api" />
         <module name="wanxinp2p-content-search-service" />
         <module name="wanxinp2p-transaction-service" />
-        <module name="wanxindepository" />
         <module name="wanxinp2p-depository-agent-service" />
         <module name="wanxinp2p-uaa-service" />
       </profile>
@@ -44,7 +43,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="MyTest" options="" />
       <module name="wanxindepository" options="-parameters" />
-      <module name="wanxinp2p" options="" />
+      <module name="wanxinp2p" options="-parameters" />
       <module name="wanxinp2p-account-service" options="-parameters" />
       <module name="wanxinp2p-api" options="-parameters" />
       <module name="wanxinp2p-common" options="-parameters" />

@@ -28,8 +28,9 @@ public interface RepaymentService {
      * 查询到期还款计划
      * @param date 格式为：yyyy-MM-dd
      * @return 因为有可能好多人同一天到期还款
+     * List<RepaymentPlan> selectDueRepayment(String date)
      */
-    List<RepaymentPlan> selectDueRepayment(String date);
+    List<RepaymentPlan> selectDueRepayment(String date, int shardingCount, int shardingItem);
 
     /**
      * 根据还款计划生成还款明细并保存
@@ -41,7 +42,7 @@ public interface RepaymentService {
     /**
      * 执行还款
      */
-    void executeRepayment(String date);
+    void executeRepayment(String date, int shardingCount, int shardingItem);
 
     /**
      * 还款预处理

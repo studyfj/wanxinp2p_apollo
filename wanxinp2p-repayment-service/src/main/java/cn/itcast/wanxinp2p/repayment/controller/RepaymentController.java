@@ -29,9 +29,9 @@ public class RepaymentController implements RepaymentApi {
         return RestResponse.success(s);
     }
 
-    @ApiOperation("测试用户还款")
-    @GetMapping("/execute-repayment/{date}")
-    public void testExecuteRepayment(@PathVariable String date) {
-        repaymentService.executeRepayment(date);
-    }
+    //@ApiOperation("测试用户还款")
+    //@GetMapping("/execute-repayment/{date}")
+    //public void testExecuteRepayment(@PathVariable String date) {
+    //    repaymentService.executeRepayment(date, shardingCount, shardingItem);
+    //}
 }
